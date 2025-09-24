@@ -154,19 +154,17 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
       <div class="wrap grid-2">
         <div class="card" style="padding:26px">
           <h2>Angebot anfragen</h2>
-          <form onsubmit="event.preventDefault(); alert('Online-Versand ist deaktiviert. Bitte schreiben Sie an info@domainedebarneville.fr.');">
-            <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
-              <div><label for="vorname">Vorname *</label><input id="vorname" required></div>
-              <div><label for="nachname">Nachname *</label><input id="nachname" required></div>
-            </div>
-            <label for="email">E-Mail *</label><input id="email" type="email" required>
-            <label for="datum">Hochzeitsdatum (vorauss.)</label><input id="datum" type="date">
-            <label for="nachricht">Nachricht</label><textarea id="nachricht" placeholder="Erzählen Sie uns von Ihrer Vorstellung…"></textarea>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
-              <button class="btn" type="submit">Senden</button>
-              <a class="btn outline" href="mailto:info@domainedebarneville.fr">E-Mail schreiben</a>
-            </div>
-          </form>
+          <form action="https://formspree.io/f/mnngnngw" method="POST">
+  <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
+    <div><label for="firstName">Vorname *</label><input id="firstName" name="firstName" required></div>
+    <div><label for="lastName">Nachname *</label><input id="lastName" name="lastName" required></div>
+  </div>
+  <label for="email">E-Mail *</label><input id="email" type="email" name="email" required>
+  <label for="weddingDate">Hochzeitsdatum (vorauss.) *</label><input id="weddingDate" type="date" name="weddingDate" required>
+  <label for="message">Nachricht</label><textarea id="message" name="message"></textarea>
+  <input type="text" name="_gotcha" style="display:none"> <!-- Optional Spam protection -->
+  <button class="btn" type="submit">Senden</button>
+</form>
         </div>
         <div class="card" style="padding:0;overflow:hidden">
           <img src="../images/photo8.jpg" alt="" style="width:100%;height:260px;object-fit:cover">
