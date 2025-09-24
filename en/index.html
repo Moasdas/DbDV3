@@ -154,19 +154,17 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
       <div class="wrap grid-2">
         <div class="card" style="padding:26px">
           <h2>Request a quote</h2>
-          <form onsubmit="event.preventDefault(); alert('Online sending is disabled. Please email info@domainedebarneville.fr.');">
-            <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
-              <div><label for="first">First name *</label><input id="first" required></div>
-              <div><label for="last">Last name *</label><input id="last" required></div>
-            </div>
-            <label for="email">Email *</label><input id="email" type="email" required>
-            <label for="date">Wedding date (est.)</label><input id="date" type="date">
-            <label for="message">Message</label><textarea id="message" placeholder="Tell us about your vision…"></textarea>
-            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
-              <button class="btn" type="submit">Send</button>
-              <a class="btn outline" href="mailto:info@domainedebarneville.fr">Write an email</a>
-            </div>
-          </form>
+          <form action="https://formspree.io/f/mnngnngw" method="POST">
+  <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
+    <div><label for="firstName">First name *</label><input id="firstName" name="firstName" required></div>
+    <div><label for="lastName">Last name *</label><input id="lastName" name="lastName" required></div>
+  </div>
+  <label for="email">Email *</label><input id="email" type="email" name="email" required>
+  <label for="weddingDate">Wedding date (est.) *</label><input id="weddingDate" type="date" name="weddingDate" required>
+  <label for="message">Message</label><textarea id="message" name="message"></textarea>
+  <input type="text" name="_gotcha" style="display:none"> <!-- Optional Spam protection -->
+  <button class="btn" type="submit">Send</button>
+</form>
         </div>
         <div class="card" style="padding:0;overflow:hidden">
           <img src="../images/photo8.jpg" alt="" style="width:100%;height:260px;object-fit:cover">
