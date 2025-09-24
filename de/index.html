@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Domaine de Barneville — Hochzeiten in der Normandie</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Lichtdurchflutete Orangerie, gepflegte Gärten und Unterkünfte nahe Honfleur & Deauville.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="icon" href="../images/logo.png">
+  <style>:root{ --bg:#FBFAF8; --paper:#FFFFFF; --ink:#272626; --muted:#78736D;
+  --accent:#C7A27A; --ring:#EEE8E1; --pastel-1:#E8DFF5; --pastel-2:#FCE1E4; --pastel-3:#DDEDEA; --pastel-4:#F3EAC2;
+  --shadow:0 14px 36px rgba(0,0,0,.06);}
+*{box-sizing:border-box} html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.7}
+img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
+.wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+.btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:#fff;padding:12px 18px;border-radius:999px;font-weight:700;border:0;cursor:pointer}
+.btn.outline{background:#fff;color:var(--ink);border:1px solid var(--ring)}
+.card{background:var(--paper);border:1px solid var(--ring);border-radius:22px;box-shadow:var(--shadow)}
+h1,h2,h3{font-family:'Playfair Display',serif;letter-spacing:.2px}
+.site-header{position:sticky;top:0;z-index:60;background:rgba(251,250,248,.85);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--ring)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+.brand{display:flex;align-items:center;gap:12px}
+.brand img{width:56px;height:56px;object-fit:contain;border-radius:14px;border:1px solid var(--ring);background:#fff}
+.brand strong{font-family:'Playfair Display',serif;font-size:clamp(20px,2.6vw,28px)}
+nav a{padding:10px;font-weight:700}
+.right{display:flex;align-items:center;gap:10px}
+.langs a{border:1px solid var(--ring);padding:8px 12px;border-radius:999px}
+.langs a.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+.burger{display:none;background:transparent;border:0;font-size:26px;padding:8px}
+/* Drawer hidden by default (prevents duplicate menu) */
+.drawer{display:none}
+@media (max-width: 900px){
+  nav{display:none}
+  .burger{display:inline-flex}
+  .drawer{position:fixed;inset:0 0 auto auto;width:min(86vw,360px);height:100vh;background:#fff;border-left:1px solid var(--ring);box-shadow:var(--shadow);padding:22px;transform:translateX(100%);transition:transform .25s ease;z-index:70;display:flex;flex-direction:column;gap:8px}
+  .drawer.open{transform:translateX(0)}
+  .drawer a{padding:12px 4px;border-bottom:1px solid var(--ring);font-weight:700}
+  .drawer .langs{margin-top:8px}
+}
+.hero{position:relative}
+.hero-visual{border-radius:28px;overflow:hidden;border:1px solid var(--ring);box-shadow:var(--shadow)}
+.slide{position:absolute;inset:0;opacity:0;transition:opacity .8s ease}
+.slide.active{opacity:1}
+.hero h2{font-size:clamp(28px,4.6vw,46px);margin:0 0 10px}
+.hero-copy{position:absolute;left:0;right:0;bottom:0;padding:20px}
+.hero-card{max-width:900px;margin:0 auto;background:rgba(255,255,255,.92);backdrop-filter:blur(4px);border:1px solid var(--ring);border-radius:22px;padding:22px 24px}
+.lead{color:var(--muted)}
+.ribbon{display:flex;gap:8px;margin-top:12px}
+.ribbon i{flex:1;height:8px;border-radius:999px}
+.r1{background:var(--pastel-1)} .r2{background:var(--pastel-2)} .r3{background:var(--pastel-3)} .r4{background:var(--pastel-4)}
+section{padding:80px 0}
+.grid-2{display:grid;gap:22px}
+@media(min-width:960px){.grid-2{grid-template-columns:1.1fr .9fr}}
+.grid-3{display:grid;gap:18px}
+@media(min-width:860px){.grid-3{grid-template-columns:repeat(3,1fr)}}
+.masonry{columns:2;column-gap:12px}
+@media(min-width:760px){.masonry{columns:3}}
+@media(min-width:1100px){.masonry{columns:4}}
+.masonry a{display:block;break-inside:avoid;margin:0 0 12px;border-radius:16px;overflow:hidden;border:1px solid var(--ring);box-shadow:0 8px 24px rgba(0,0,0,.05)}
+.faq{display:grid;gap:12px}
+.faq details{background:#fff;border:1px solid var(--ring);border-radius:16px;padding:14px}
+.faq summary{cursor:pointer;font-weight:700}
+label{font-weight:700;font-size:14px}
+input,textarea,select{width:100%;padding:12px 14px;border:1px solid var(--ring);border-radius:12px;background:#fff;font-size:16px}
+textarea{min-height:140px}
+footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
+.footer-grid{display:grid;gap:12px}
+@media(min-width:820px){.footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+.muted{color:var(--muted)}
+</style>
+</head>
+<body>
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="brand" href="/de/"><img src="../images/logo.png" alt=""><strong>Domaine de Barneville</strong></a>
+      <nav aria-label="Hauptmenü">
+        <a href="#location">Location</a><a href="#galerie">Galerie</a><a href="#faq">FAQ</a><a href="#kontakt" class="btn">Angebot anfragen</a>
+      </nav>
+      <div class="right">
+        <div class="langs"><a href="/">FR</a><a href="/en/">EN</a><a class="active" href="/de/">DE</a></div>
+        <button class="burger" aria-label="Menü öffnen">☰</button>
+      </div>
+    </div>
+    <div class="drawer" id="drawer">
+      <a href="#location">Location</a><a href="#galerie">Galerie</a><a href="#faq">FAQ</a><a class="btn" href="#kontakt">Angebot anfragen</a>
+      <div class="langs"><a href="/">FR</a><a href="/en/">EN</a><a class="active" href="/de/">DE</a></div>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap">
+        <div class="hero-visual" style="position:relative;min-height:58vh">
+          <img class="slide active" src="../images/photo1.jpg" alt="" style="width:100%;height:58vh;object-fit:cover">
+          <img class="slide" src="../images/photo2.jpg" alt="" style="width:100%;height:58vh;object-fit:cover">
+          <img class="slide" src="../images/photo3.jpg" alt="" style="width:100%;height:58vh;object-fit:cover">
+          <div class="hero-copy">
+            <div class="hero-card">
+              <h2>Feiern Sie zeitlose Liebe in der Normandie</h2>
+              <p class="lead">Ein romantisches Landgut mit lichtdurchfluteter Orangerie, gepflegten Gärten und Unterkünften vor Ort.</p>
+              <div class="ribbon"><i class="r1"></i><i class="r2"></i><i class="r3"></i><i class="r4"></i></div>
+              <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
+                <a class="btn" href="#kontakt">Verfügbarkeit prüfen</a>
+                <a class="btn outline" href="#galerie">Galerie ansehen</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="location">
+      <div class="wrap grid-2">
+        <div class="card" style="padding:26px">
+          <h2>Räume & Kapazitäten</h2>
+          <p>Elf Hektar Parklandschaft mit flexiblen, eleganten Settings: Rasenflächen für Cocktails, freie Trauung und eine spektakuläre <strong>Orangerie</strong> für Dinner & Tanz.</p>
+          <p><strong>Kapazität.</strong> Bis zu 150 Sitzplätze; Privatparkplatz, barrierefreie Sanitäranlage, Tennis. Optional <em>240 m² Stretch-Zelt</em> mit Heizung.</p>
+          <p><strong>Unterkunft.</strong> Herrenhaus + Annex für 14–15 Gäste mit eigenen Bädern.</p>
+        </div>
+        <div class="card" style="padding:0;overflow:hidden"><img src="../images/photo4.jpg" alt="" style="width:100%;height:100%;object-fit:cover"></div>
+      </div>
+    </section>
+
+    <section>
+      <div class="wrap grid-3">
+        <div class="card" style="padding:22px"><h3>Flexible Bereiche</h3><p class="muted">Freie Trauung, Gartenempfang, Dinner unter Glas.</p></div>
+        <div class="card" style="padding:22px"><h3>Keine Sperrstunde</h3><p class="muted">Exklusive Nutzung ohne direkte Nachbarn.</p></div>
+        <div class="card" style="padding:22px"><h3>Bewährte Partner</h3><p class="muted">Kuratierte Dienstleister oder Ihr eigenes Team.</p></div>
+      </div>
+    </section>
+
+    <section id="galerie">
+      <div class="wrap"><h2>Galerie</h2>
+        <div class="masonry">
+          <a href="../images/photo1.jpg"><img src="../images/photo1.jpg" alt=""></a><a href="../images/photo2.jpg"><img src="../images/photo2.jpg" alt=""></a><a href="../images/photo3.jpg"><img src="../images/photo3.jpg" alt=""></a><a href="../images/photo4.jpg"><img src="../images/photo4.jpg" alt=""></a><a href="../images/photo5.jpg"><img src="../images/photo5.jpg" alt=""></a><a href="../images/photo6.jpg"><img src="../images/photo6.jpg" alt=""></a><a href="../images/photo7.jpg"><img src="../images/photo7.jpg" alt=""></a><a href="../images/photo8.jpg"><img src="../images/photo8.jpg" alt=""></a><a href="../images/photo9.jpg"><img src="../images/photo9.jpg" alt=""></a>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq">
+      <div class="wrap"><h2>Häufige Fragen</h2>
+        <div class="faq">
+          <details open><summary>Maximale Kapazität</summary><p>Bis zu <strong>150</strong> sitzend; mehr im Steh-/Buffet-Konzept.</p></details>
+          <details><summary>Zeitliche Beschränkungen</summary><p>Keine — keine Sperrstunde, unter Beachtung der Sicherheitsregeln.</p></details>
+          <details><summary>Barrierefreiheit</summary><p>Stufenloser Zugang zu den wichtigsten Bereichen und ein barrierefreies WC.</p></details>
+          <details><summary>Schlechtwetter-Plan</summary><p>Orangerie als überdachte Option; Zelt & Heizung saisonal verfügbar.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section id="kontakt">
+      <div class="wrap grid-2">
+        <div class="card" style="padding:26px">
+          <h2>Angebot anfragen</h2>
+          <form onsubmit="event.preventDefault(); alert('Online-Versand ist deaktiviert. Bitte schreiben Sie an info@domainedebarneville.fr.');">
+            <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
+              <div><label for="vorname">Vorname *</label><input id="vorname" required></div>
+              <div><label for="nachname">Nachname *</label><input id="nachname" required></div>
+            </div>
+            <label for="email">E-Mail *</label><input id="email" type="email" required>
+            <label for="datum">Hochzeitsdatum (vorauss.)</label><input id="datum" type="date">
+            <label for="nachricht">Nachricht</label><textarea id="nachricht" placeholder="Erzählen Sie uns von Ihrer Vorstellung…"></textarea>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:6px">
+              <button class="btn" type="submit">Senden</button>
+              <a class="btn outline" href="mailto:info@domainedebarneville.fr">E-Mail schreiben</a>
+            </div>
+          </form>
+        </div>
+        <div class="card" style="padding:0;overflow:hidden">
+          <img src="../images/photo8.jpg" alt="" style="width:100%;height:260px;object-fit:cover">
+          <div style="padding:22px">
+            <h3>Adresse</h3>
+            <p><strong>Domaine de Barneville</strong><br>9 Rte de Barneville, 14130 Saint-Gatien-des-Bois</p>
+            <p>E-Mail: <a href="mailto:info@domainedebarneville.fr">info@domainedebarneville.fr</a></p>
+            <hr style="border:0;border-top:1px solid var(--ring);margin:18px 0">
+            <iframe title="Karte — Domaine de Barneville" width="100%" height="240" style="border:0;display:block" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=9+Rte+de+Barneville,+14130+Saint-Gatien-des-Bois&output=embed"></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="wrap footer-grid">
+      <div><p class="muted">© 2025 Domaine de Barneville. Alle Rechte vorbehalten.</p></div>
+      <div><a class="muted" href="#faq">FAQ</a></div>
+      <div><a class="muted" href="#kontakt">Kontakt</a></div>
+      <div><a class="muted" href="/">FR</a> • <a class="muted" href="/en/">EN</a></div>
+    </div>
+  </footer>
+
+  <script>
+    const burger=document.querySelector('.burger');const drawer=document.getElementById('drawer');
+    if(burger&&drawer){burger.addEventListener('click',()=>drawer.classList.toggle('open'));drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>drawer.classList.remove('open')));}
+    const slides=[...document.querySelectorAll('.slide')];let i=0;setInterval(()=>{slides[i].classList.remove('active');i=(i+1)%slides.length;slides[i].classList.add('active');},4500);
+  </script>
+</body>
+</html>
