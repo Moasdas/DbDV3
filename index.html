@@ -4,11 +4,10 @@
   <meta charset="utf-8">
   <title>Domaine de Barneville — Mariages en Normandie</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Orangerie lumineuse, jardins paysagers et hébergements — un lieu d’exception près d’Honfleur et Deauville.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="description" content="Orangerie lumineuse, jardins paysagers et hébergement sur place près de Honfleur & Deauville.">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <link rel="icon" href="images/logo.png">
+  <link rel="icon" href="../images/logo.png">
   <style>:root{ --bg:#FBFAF8; --paper:#FFFFFF; --ink:#272626; --muted:#78736D;
   --accent:#C7A27A; --ring:#EEE8E1; --pastel-1:#E8DFF5; --pastel-2:#FCE1E4; --pastel-3:#DDEDEA; --pastel-4:#F3EAC2;
   --shadow:0 14px 36px rgba(0,0,0,.06);}
@@ -74,37 +73,40 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
 </head>
 <body>
   <header class="site-header">
-    <div class="wrap header-inner">
-      <a class="brand" href="/"><img src="images/logo.png" alt=""><strong>Domaine de Barneville</strong></a>
-      <nav aria-label="Navigation">
-        <a href="#lieu">Le Lieu</a><a href="#galerie">Galerie</a><a href="#faq">FAQ</a><a href="#contact" class="btn">Obtenir un devis</a>
-      </nav>
-      <div class="right">
-        <div class="langs"><a class="active" href="/">FR</a><a href="en/">EN</a><a href="de/">DE</a></div>
-        <button class="burger" aria-label="Ouvrir le menu">☰</button>
-      </div>
+  <div class="wrap header-inner">
+    <a class="brand" href="/fr/"><img src="../images/logo.png" alt=""><strong>Domaine de Barneville</strong></a>
+    <nav aria-label="Primary">
+      <a href="#venue">Le Lieu</a><a href="#gallery">Galerie</a><a href="#faq">FAQ</a><a href="#contact" class="btn">Obtenir un devis</a>
+    </nav>
+    <div class="right">
+      <div class="langs"><a href="/">FR</a><a class="active" href="/fr/">FR</a><a href="/en/">EN</a></div>
+      <!-- Instagram Icon -->
+      <a href="https://www.instagram.com/domaine_de_barneville_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+  <img src="/images/instagram-icon.png" alt="Instagram" style="width: 30px; height: 30px;"/>
+</a>
+      <button class="burger" aria-label="Ouvrir le menu">☰</button>
     </div>
-    <div class="drawer" id="drawer">
-      <a href="#lieu">Le Lieu</a><a href="#galerie">Galerie</a><a href="#faq">FAQ</a><a class="btn" href="#contact">Obtenir un devis</a>
-      <div class="langs"><a class="active" href="/">FR</a><a href="en/">EN</a><a href="de/">DE</a></div>
-    </div>
-  </header>
-
+  </div>
+  <div class="drawer" id="drawer">
+    <a href="#venue">Le Lieu</a><a href="#gallery">Galerie</a><a href="#faq">FAQ</a><a class="btn" href="#contact">Obtenir un devis</a>
+    <div class="langs"><a href="/">FR</a><a class="active" href="/fr/">FR</a><a href="/en/">EN</a></div>
+  </div>
+</header>
   <main id="top">
     <section class="hero">
       <div class="wrap">
         <div class="hero-visual" style="position:relative;min-height:58vh">
-          <img class="slide active" src="images/photo1.jpg" alt="" style="width:100%;height:58vh;object-fit:cover">
-          <img class="slide" src="images/photo2.jpg" alt="" style="width:100%;height:58vh;object-fit:cover">
-          <img class="slide" src="images/photo3.jpg" alt="" style="width:100%;height:58vh;object-fit:cover">
+          <img class="slide active" src="../images/photo1.jpg" alt="" style="width:100%;height:58vh;object-fit:cover">
+          <img class="slide" src="../images/photo2.jpg" alt="" style="width:100%;height:58vh;object-fit:cover">
+          <img class="slide" src="../images/photo3.jpg" alt="" style="width:100%;height:58vh;object-fit:cover">
           <div class="hero-copy">
             <div class="hero-card">
-              <h2>Célébrez un amour intemporel en Normandie</h2>
-              <p class="lead">Orangerie baignée de lumière, jardins paysagers et hébergements de charme — un cadre élégant et flexible pour un week-end inoubliable.</p>
-              <div class="ribbon"><i class="r1"></i><i class="r2"></i><i class="r3"></i><i class="r4"></i></div>
+              <h2>Célébrez l'amour intemporel en Normandie</h2>
+              <p class="lead">Un domaine romantique avec une orangerie lumineuse, des jardins paysagers et un hébergement charmant sur place.</p>
+             
               <div style="margin-top:14px;display:flex;gap:10px;flex-wrap:wrap">
-                <a class="btn" href="#contact">Vérifier vos dates</a>
-                <a class="btn outline" href="#galerie">Voir la galerie</a>
+                <a class="btn" href="#contact">Vérifier la disponibilité</a>
+                <a class="btn outline" href="#gallery">Voir la galerie</a>
               </div>
             </div>
           </div>
@@ -112,92 +114,124 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
       </div>
     </section>
 
-   <section id="lieu">
-  <div class="wrap grid-2">
-    <div class="card" style="padding:26px">
-      <h2>Le Domaine</h2>
-      <p>Au cœur du Pays d’Auge, en Normandie, le Domaine de Barneville vous accueille dans un écrin de verdure où histoire et élégance se conjuguent à merveille. Cette propriété à colombages datant du XVIIe siècle est entourée d’un parc arboré de 11 hectares, offrant un cadre à la fois paisible, romantique et raffiné pour célébrer le plus beau jour de votre vie.</p>
-      <p>Le domaine se prête à toutes les envies : mariage champêtre, chic, bohème ou classique, en intérieur comme en extérieur. Chaque instant devient inoubliable dans ce lieu empreint de charme et de sérénité.</p>
-      <p><strong>Espaces et capacités.</strong> Le Domaine de Barneville dispose de plusieurs espaces extérieurs magnifiquement aménagés, ainsi que d’une superbe orangeraie lumineuse pouvant accueillir jusqu’à 150 convives assis. Ce lieu à l’architecture élégante est idéal pour vos repas, vos soirées dansantes ou vos cérémonies abritées. Le domaine permet de nombreuses configurations sur mesure : cocktail dans le parc, cérémonie laïque en plein air, dîner sous l’orangeraie… Tout est pensé pour créer un mariage à votre image.</p>
-      <p><strong>Équipements inclus :</strong></p>
-      <ul>
-        <li>Orangeraie jusqu’à 150 personnes</li>
-        <li>10 mange-debout</li>
-        <li>Tables rondes (150 cm – 8 à 10 personnes)</li>
-        <li>Chaises</li>
-        <li>Parking privé</li>
-        <li>Sanitaires, dont un avec accès handicapé</li>
+<section id="venue">
+  <div class="wrap">
+    <div class="card" style="padding:30px; background: #fff; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 30px;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 36px; color: #272626; margin-bottom: 20px; text-align: left;">Le Domaine</h2>
+      <p style="line-height: 1.8; font-size: 18px; color: #5f5f5f; margin-bottom: 20px; text-align: justify;">Au cœur du Pays d’Auge en Normandie, le Domaine de Barneville vous accueille dans un parc de 11 hectares où histoire et élégance se rencontrent harmonieusement. Ce domaine du XVIIe siècle est entouré d'un parc boisé, offrant un cadre paisible, romantique et raffiné pour le plus beau jour de votre vie.</p>
+      <p style="line-height: 1.8; font-size: 18px; color: #5f5f5f; margin-bottom: 20px; text-align: justify;">Le domaine s’adapte à tous les types de mariages : rustique, chic, bohème ou classique, en intérieur comme en extérieur. Chaque moment devient inoubliable dans ce lieu charmant et serein.</p>
+      
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; color: #C7A27A; margin-bottom: 15px; text-align: left;">Espaces et Capacité</h3>
+      <p style="line-height: 1.8; font-size: 18px; color: #5f5f5f; margin-bottom: 20px; text-align: justify;">Le Domaine de Barneville dispose de magnifiques espaces extérieurs paysagers ainsi que d'une somptueuse <strong>Orangerie</strong> lumineuse pouvant accueillir jusqu'à 150 personnes assises. Ce lieu élégant est idéal pour des dîners, des danses et des cérémonies abritées. Le domaine permet de nombreuses configurations personnalisées : réception en cocktail dans le parc, cérémonie en plein air, dîner sous l'Orangerie... Tout est conçu pour créer un mariage qui vous ressemble.</p>
+      
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; color: #C7A27A; margin-bottom: 15px; text-align: left;">Équipements inclus :</h3>
+      <ul style="list-style-type: none; padding-left: 0; margin-bottom: 20px; text-align: justify;">
+        <li style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;">• Orangerie jusqu'à 150 personnes</li>
+        <li style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;">• 10 tables de cocktail</li>
+        <li style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;">• Tables rondes (150 cm – 8 à 10 personnes)</li>
+        <li style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;">• Chaises</li>
+        <li style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;">• Parking privé</li>
+        <li style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;">• Sanitaires accessibles</li>
       </ul>
-      <p>Une tente stretch supplémentaire de 240 m² est disponible à la location pour agrandir l’espace si nécessaire. Un système de chauffage est également proposé selon la saison.</p>
-      <p><strong>Prestations.</strong> Le domaine est entièrement privatisé, que ce soit en semaine ou le week-end. Aucune limite horaire ne vous est imposée : vous avez toute la liberté de vivre chaque moment à votre rythme. L’équipe du Domaine de Barneville vous accompagne tout au long des préparatifs avec écoute et bienveillance. Nous mettons également à votre disposition une liste de prestataires recommandés (traiteurs, fleuristes, DJ, barman, décorateurs…) pour vous faciliter l’organisation.</p>
-      <p><strong>Hébergements.</strong> Le domaine comprend un manoir et son annexe permettant de loger jusqu’à 15 personnes. Chaque chambre allie le charme de l’ancien au confort moderne et dispose de sa propre salle de bain. Le domaine est situé dans une région touristique, avec de nombreux hôtels et hébergements Airbnb à proximité, permettant à vos invités de trouver facilement une solution adaptée.</p>
-      <p><strong>Tennis privé.</strong> Le domaine dispose également d’un court de tennis récemment rénové, qui pourrait être utilisé pour un tournoi de tennis pour vos invités, ajoutant un aspect sportif et ludique à votre événement.</p>
-      <p><strong>Localisation.</strong> Le Domaine de Barneville bénéficie d’un emplacement idéal :
-        <ul>
-          <li>À 5 km de Honfleur</li>
-          <li>À 8 km de Deauville-Trouville</li>
-          <li>À 170 km de Paris, accessible en voiture ou en train</li>
-        </ul>
-        Son accessibilité et son cadre naturel en font un lieu à la fois pratique et dépaysant pour réunir vos proches.
-      </p>
-      <p><strong>Autres atouts :</strong>
-        <ul>
-          <li>Disponible toute l’année</li>
-          <li>Exclusivité du domaine pour chaque événement</li>
-          <li>Cadre historique unique et atmosphère bucolique</li>
-          <li>Flexibilité des espaces pour un événement 100 % personnalisé</li>
-        </ul>
-      </p>
-    </div>
-    <div class="card" style="padding:0;overflow:hidden">
-      <img src="images/photo4.jpg" alt="" style="width:100%;height:100%;object-fit:cover">
+      
+      <p style="line-height: 1.8; font-size: 18px; color: #5f5f5f; margin-bottom: 20px; text-align: justify;">Un chapiteau supplémentaire de 240 m² est disponible à la location pour agrandir l’espace si nécessaire. Le chauffage est également disponible selon la saison.</p>
+      
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; color: #C7A27A; margin-bottom: 15px; text-align: left;">Hébergement</h3>
+      <p style="line-height: 1.8; font-size: 18px; color: #5f5f5f; margin-bottom: 20px; text-align: justify;">Le domaine comprend une maison principale et une annexe pouvant accueillir jusqu'à 15 personnes. Chaque chambre allie le charme du passé et le confort moderne et dispose de sa propre salle de bain. Le domaine est situé dans une zone touristique, avec de nombreux hôtels et logements Airbnb à proximité, ce qui permet à vos invités de trouver facilement un hébergement.</p>
+      
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; color: #C7A27A; margin-bottom: 15px; text-align: left;">Court de tennis privé</h3>
+      <p style="line-height: 1.8; font-size: 18px; color: #5f5f5f; margin-bottom: 20px; text-align: justify;">Le domaine dispose également d’un court de tennis privé récemment rénové, que vous pourrez utiliser pour organiser un tournoi de tennis pour vos invités, ajoutant une dimension sportive et ludique à votre événement.</p>
+      
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; color: #C7A27A; margin-bottom: 15px; text-align: left;">Emplacement</h3>
+      <ul style="list-style-type: none; padding-left: 0; margin-bottom: 20px; text-align: justify;">
+        <li style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;">• 5 km de Honfleur</li>
+        <li style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;">• 8 km de Deauville-Trouville</li>
+        <li style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;">• 170 km de Paris, accessible en voiture ou en train</li>
+      </ul>
+      <p style="line-height: 1.8; font-size: 18px; color: #5f5f5f; margin-bottom: 20px; text-align: justify;">Son accessibilité et son cadre naturel en font un lieu pratique et unique pour réunir vos proches.</p>
+      
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; color: #C7A27A; margin-bottom: 15px; text-align: left;">Autres avantages</h3>
+      <ul style="list-style-type: none; padding-left: 0; margin-bottom: 20px; text-align: justify;">
+        <li style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;">• Disponible toute l'année</li>
+        <li style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;">• Location exclusive du domaine pour chaque événement</li>
+        <li style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;">• Cadre historique unique et atmosphère bucolique</li>
+        <li style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;">• Espaces flexibles pour un événement entièrement personnalisé</li>
+      </ul>
     </div>
   </div>
 </section>
 
 
-    <section>
-      <div class="wrap grid-3">
-        <div class="card" style="padding:22px"><h3>Espaces modulables</h3><p class="muted">Cérémonie laïque, cocktail au jardin, dîner sous verrière.</p></div>
-        <div class="card" style="padding:22px"><h3>Sans limite horaire</h3><p class="muted">Privatisation du domaine et pas de voisinage immédiat.</p></div>
-        <div class="card" style="padding:22px"><h3>Prestataires de confiance</h3><p class="muted">Réseau local trié sur le volet, ou vos prestataires.</p></div>
-      </div>
-    </section>
+   <section>
+  <div class="wrap grid-3">
+    <div class="card" style="padding:22px; background: #fff; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 30px;">
+      <img src="../images/photo7.jpg" alt="Capacité" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 10px;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; color: #C7A27A; margin-bottom: 15px; text-align: left;">Capacité</h3>
+      <p style="line-height: 1.8; font-size: 18px; color: #5f5f5f; margin-bottom: 20px; text-align: justify;">Le Domaine de Barneville dispose de magnifiques espaces extérieurs paysagers et d'une orangerie impressionnante, idéale pour organiser des événements spéciaux. Le lieu peut accueillir jusqu'à 150 invités assis, ce qui le rend parfait pour des repas, des soirées dansantes ou des cérémonies abritées. Avec une variété d'options personnalisables, vous pouvez organiser un cocktail dans le parc, une cérémonie laïque en plein air ou un délicieux dîner sous l'ombre des arbres fruitiers. Vos invités pourront également profiter d'un accès à un court de tennis privé, offrant la possibilité de participer à des tournois ludiques dans un cadre serein.</p>
+    </div>
+    <div class="card" style="padding:22px; background: #fff; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 30px;">
+      <img src="../images/photo8.jpg" alt="Services" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 10px;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; color: #C7A27A; margin-bottom: 15px; text-align: left;">Services</h3>
+      <p style="line-height: 1.8; font-size: 18px; color: #5f5f5f; margin-bottom: 20px; text-align: justify;">Le Domaine de Barneville est un domaine entièrement privé, offrant un environnement serein à profiter à votre propre rythme, que ce soit en semaine ou pendant les week-ends. Il n'y a aucune contrainte de temps, vous permettant de vous immerger pleinement dans chaque instant. Notre équipe attentive est dédiée à vous accompagner tout au long des préparatifs afin d'assurer une expérience sans accroc. Nous proposons également une liste de prestataires recommandés, incluant des traiteurs, des fleuristes, des DJ, des barmans et des décorateurs, pour simplifier votre planification.</p>
+    </div>
+    <div class="card" style="padding:22px; background: #fff; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 30px;">
+      <img src="../images/photo9.jpg" alt="Hébergement" style="width: 100%; height: 200px; object-fit: cover; margin-bottom: 10px;">
+      <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; color: #C7A27A; margin-bottom: 15px; text-align: left;">Hébergement</h3>
+      <p style="line-height: 1.8; font-size: 18px; color: #5f5f5f; margin-bottom: 20px; text-align: justify;">Notre domaine offre la solution parfaite pour un séjour mémorable. Vous pouvez réserver l'ensemble de la maison de maître pour l'hébergement, alliant élégance classique et commodités modernes. Les vastes espaces de vie, les chambres spacieuses et entièrement équipées, ainsi que la cuisine équipée, offrent tout le nécessaire pour un séjour confortable. De grandes fenêtres laissent entrer la lumière naturelle, et le décor crée une atmosphère chaleureuse et accueillante. Profitez des environs sereins et créez des souvenirs inoubliables dans ce cadre enchanteur.</p>
+    </div>
+  </div>
+</section>
 
-    <section id="galerie">
-      <div class="wrap"><h2>Galerie</h2>
-        <div class="masonry">
-          <a href="images/photo1.jpg"><img src="images/photo1.jpg" alt=""></a><a href="images/photo2.jpg"><img src="images/photo2.jpg" alt=""></a><a href="images/photo3.jpg"><img src="images/photo3.jpg" alt=""></a><a href="images/photo4.jpg"><img src="images/photo4.jpg" alt=""></a><a href="images/photo5.jpg"><img src="images/photo5.jpg" alt=""></a><a href="images/photo6.jpg"><img src="images/photo6.jpg" alt=""></a><a href="images/photo7.jpg"><img src="images/photo7.jpg" alt=""></a><a href="images/photo8.jpg"><img src="images/photo8.jpg" alt=""></a><a href="images/photo9.jpg"><img src="images/photo9.jpg" alt=""></a>
-        </div>
-      </div>
-    </section>
+
+  <section id="gallery">
+  <div class="wrap">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 36px; color: #272626; margin-bottom: 30px;">Galerie</h2>
+    <div class="grid-gallery" style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 15px;">
+      <a href="../images/photo1.jpg"><img src="../images/photo1.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></a>
+      <a href="../images/photo2.jpg"><img src="../images/photo2.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></a>
+      <a href="../images/photo3.jpg"><img src="../images/photo3.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></a>
+      <a href="../images/photo4.jpg"><img src="../images/photo4.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></a>
+      <a href="../images/photo5.jpg"><img src="../images/photo5.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></a>
+      <a href="../images/photo6.jpg"><img src="../images/photo6.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></a>
+      <a href="../images/photo7.jpg"><img src="../images/photo7.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></a>
+      <a href="../images/photo8.jpg"><img src="../images/photo8.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></a>
+      <a href="../images/photo9.jpg"><img src="../images/photo9.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></a>
+    </div>
+    
+    <!-- More Photos Button -->
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="https://www.instagram.com/domaine_de_barneville_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
+        <button style="padding: 10px 20px; background-color: #C7A27A; color: white; border: none; border-radius: 5px; cursor: pointer;">
+          Plus de Photos
+        </button>
+      </a>
+    </div>
+  </div>
+</section>
 
     <section id="contact">
   <div class="wrap grid-2">
-    <div class="card" style="padding:26px">
-      <h2>Obtenir un devis</h2>
+    <div class="card" style="padding:26px; background: #fff; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); overflow: hidden; margin-bottom: 30px;">
+      <h2 style="font-family: 'Playfair Display', serif; font-size: 36px; color: #272626; margin-bottom: 20px;">Demander un devis</h2>
       <form action="https://formspree.io/f/mnngnngw" method="POST">
         <div style="display:grid;gap:12px;grid-template-columns:1fr 1fr">
-          <div><label for="firstName">Prénom *</label><input id="firstName" name="firstName" required></div>
-          <div><label for="lastName">Nom *</label><input id="lastName" name="lastName" required></div>
+          <div><label for="firstName" style="font-size: 18px; color: #272626;">Prénom *</label><input id="firstName" name="firstName" required style="padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;"></div>
+          <div><label for="lastName" style="font-size: 18px; color: #272626;">Nom *</label><input id="lastName" name="lastName" required style="padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;"></div>
         </div>
-        <label for="email">Email *</label><input id="email" type="email" name="email" required>
-        
-        <!-- Optional phone field -->
-        <label for="phone">Téléphone</label><input id="phone" type="tel" name="phone">
-        
-        <label for="weddingDate">Date de mariage prévue</label><input id="weddingDate" type="date" name="weddingDate">
-        <label for="message">Message</label><textarea id="message" name="message"></textarea>
+        <label for="email" style="font-size: 18px; color: #272626;">Email *</label><input id="email" type="email" name="email" required style="padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;">
+        <label for="phone" style="font-size: 18px; color: #272626;">Téléphone</label><input id="phone" type="tel" name="phone" style="padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;">
+        <label for="weddingDate" style="font-size: 18px; color: #272626;">Date du mariage (est.)</label><input id="weddingDate" type="date" name="weddingDate" style="padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;">
+        <label for="message" style="font-size: 18px; color: #272626;">Message</label><textarea id="message" name="message" style="padding: 10px; font-size: 16px; border: 1px solid #ccc; border-radius: 5px;"></textarea>
         <input type="text" name="_gotcha" style="display:none"> <!-- Optional Spam protection -->
-        <button class="btn" type="submit">Envoyer</button>
+        <button class="btn" type="submit" style="background-color: #C7A27A; color: #fff; border: none; padding: 10px 20px; border-radius: 5px; cursor: pointer;">Envoyer</button>
       </form>
     </div>
-    <div class="card" style="padding:0;overflow:hidden">
-      <img src="images/photo8.jpg" alt="" style="width:100%;height:260px;object-fit:cover">
+    <div class="card" style="padding:0; overflow:hidden; background: #fff; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.1); margin-bottom: 30px;">
+      <img src="../images/photo8.jpg" alt="" style="width:100%; height: 260px; object-fit: cover;">
       <div style="padding:22px">
-        <h3>Coordonnées</h3>
-        <p><strong>Domaine de Barneville</strong><br>9 Rte de Barneville, 14130 Saint-Gatien-des-Bois</p>
-        <p>Email : <a href="mailto:info@domainedebarneville.fr">info@domainedebarneville.fr</a></p>
+        <h3 style="font-family: 'Playfair Display', serif; font-size: 28px; color: #C7A27A; margin-bottom: 15px;">Coordonnées</h3>
+        <p style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;"><strong>Domaine de Barneville</strong><br>9 Rte de Barneville, 14130 Saint-Gatien-des-Bois</p>
+        <p style="font-size: 18px; color: #5f5f5f; margin-bottom: 10px;">Email: <a href="mailto:info@domainedebarneville.fr" style="color: #C7A27A;">info@domainedebarneville.fr</a></p>
         <hr style="border:0;border-top:1px solid var(--ring);margin:18px 0">
         <iframe title="Carte — Domaine de Barneville" width="100%" height="240" style="border:0;display:block" loading="lazy" allowfullscreen src="https://www.google.com/maps?q=9+Rte+de+Barneville,+14130+Saint-Gatien-des-Bois&output=embed"></iframe>
       </div>
@@ -206,195 +240,170 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
 </section>
 
 
-     <section id="faq">
+
+    <section id="reviews">
   <div class="wrap">
-    <h2>Questions fréquemment posées</h2>
+    <h2>Ce que nos invités en disent</h2>
+
+    <div class="reviews-grid">
+      <!-- Review 1 -->
+      <div class="review-card">
+        <p style="font-size: 18px; font-style: italic;">"Superbe lieu de mariage avec un charme particulier. Les maisons sont aménagées avec beaucoup d'amour et l'organisation a super bien fonctionné."</p>
+        <p><strong>- Local Guide</strong></p>
+        <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+        <p>Visité en juillet</p>
+      </div>
+
+      <!-- Review 2 -->
+      <div class="review-card">
+        <p style="font-size: 18px; font-style: italic;">"Absolument exceptionnel. Le service, l'emplacement et l'atmosphère étaient parfaits, 10/10. ⭐⭐⭐⭐⭐ J'ai eu la chance de passer une journée spéciale ici et honnêtement, tout était parfait."</p>
+        <p><strong>- Local Guide</strong></p>
+        <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+        <p>Visité en juillet</p>
+      </div>
+
+      <!-- Review 3 -->
+      <div class="review-card">
+        <p style="font-size: 18px; font-style: italic;">"J'ai récemment assisté à un mariage dans ce magnifique lieu en tant qu'invité et j'ai été absolument impressionné par la façon dont tout a été conçu de manière si spéciale et réfléchie. Le domaine propose plusieurs espaces spacieux pour différentes parties de la célébration."</p>
+        <p><strong>- Carla Hartwein</strong></p>
+        <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+        <p>Visité en juillet</p>
+      </div>
+
+      <!-- Review 4 -->
+      <div class="review-card">
+        <p style="font-size: 18px; font-style: italic;">"Lieu de mariage absolument époustouflant! Tout était magnifiquement agencé, avec une atmosphère magique dans tout le domaine. Les maisons charmantes et les jardins parfaitement entretenus ont offert un cadre inoubliable. La communication et la coordination étaient également impeccables!"</p>
+        <p><strong>- Marcel M</strong></p>
+        <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+        <p>Visité en avril</p>
+      </div>
+    </div>
+
+    <div class="more-reviews" style="text-align: center; margin-top: 30px;">
+      <a href="https://www.google.com/maps/place/Domaine+de+Barneville" target="_blank" style="color: #C7A27A; text-decoration: none; font-size: 18px;">Voir plus d'avis sur Google</a>
+    </div>
+  </div>
+</section>
+
+<section id="faq">
+  <div class="wrap">
+    <h2 style="font-family: 'Playfair Display', serif; font-size: 28px; color: #272626; margin-bottom: 30px;">Questions fréquemment posées</h2>
     <div class="faq">
-      <details>
-        <summary>Combien coûte la location d'un lieu de réception pour un mariage chez Domaine de Barneville ?</summary>
-        <p>Chez Domaine de Barneville, vous pouvez louer un lieu de réception pour un mariage, à partir de <strong>4 500€</strong>, et cela peut être personnalisé (par exemple, disponible également en paiement échelonné). N'hésitez pas à nous contacter, nous serons heureux de discuter des détails avec vous.</p>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Combien coûte la location d'un lieu pour un mariage au Domaine de Barneville ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Le prix de la location pour un mariage au Domaine de Barneville commence à partir de <strong>4 500 €</strong> et peut être personnalisé (par exemple, paiement en plusieurs fois disponible). N'hésitez pas à nous contacter, nous serons heureux de discuter des détails avec vous.</p>
       </details>
-      
-      <details>
-        <summary>De quelles installations pour la célébration de mariages dispose Domaine de Barneville ?</summary>
-        <p>Domaine de Barneville dispose des installations et espaces suivants pour la célébration de mariages :</p>
-        <ul>
+
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Quelles installations sont disponibles au Domaine de Barneville pour les mariages ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Le Domaine de Barneville propose les installations et espaces suivants pour les mariages :</p>
+        <ul style="font-size: 16px; color: #5f5f5f; line-height: 1.8; padding-left: 20px;">
           <li>Terrasse</li>
           <li>Jardin</li>
-          <li>Cuisine</li>
+          <li>Piscine</li>
           <li>Piste de danse</li>
           <li>Parking</li>
-          <li>Espace spécialement conçu pour le traiteur, situé à côté de l'Orangerie</li>
-          <li>Chapiteau</li>
-          <li>Espace pour une cérémonie civile</li>
-          <li>Autre (Court de tennis)</li>
+          <li>Espace dédié pour le traiteur situé à côté de l'Orangerie</li>
+          <li>Tente de réception</li>
+          <li>Espace pour cérémonie civile</li>
+          <li>Autres (court de tennis)</li>
         </ul>
       </details>
 
-      <details>
-        <summary>Quels services propose Domaine de Barneville pour l’organisation de mariages ?</summary>
-        <p>Domaine de Barneville propose les services suivants pour des mariages :</p>
-        <ul>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Quels services propose le Domaine de Barneville pour les mariages ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Le Domaine de Barneville propose les services suivants pour les mariages :</p>
+        <ul style="font-size: 16px; color: #5f5f5f; line-height: 1.8; padding-left: 20px;">
           <li>Banquet</li>
           <li>Cérémonie</li>
-          <li>Autres (Nous proposons la location du domaine pour vos événements. Vous êtes libre de choisir vos prestataires, mais nous pouvons vous recommander des prestataires de confiance avec lesquels nous travaillons régulièrement.)</li>
+          <li>Autres (Nous proposons la location du domaine pour vos événements. Vous êtes libre de choisir vos propres prestataires, mais nous pouvons vous recommander des partenaires de confiance avec lesquels nous travaillons régulièrement.)</li>
         </ul>
       </details>
 
-      <details>
-        <summary>Quelles configurations propose Domaine de Barneville pour la réception ?</summary>
-        <p>Domaine de Barneville propose les configurations suivantes :</p>
-        <ul>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Quelles configurations de sièges propose le Domaine de Barneville pour la réception de mariage ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Le Domaine de Barneville propose les configurations suivantes :</p>
+        <ul style="font-size: 16px; color: #5f5f5f; line-height: 1.8; padding-left: 20px;">
           <li>Debout</li>
           <li>Assis</li>
         </ul>
       </details>
 
-      <details>
-        <summary>Quels types de réception propose Domaine de Barneville ?</summary>
-        <p>Les différents types de réceptions proposées par Domaine de Barneville sont :</p>
-        <ul>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Quels types de réceptions propose le Domaine de Barneville ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Les différents types de réceptions proposées par le Domaine de Barneville comprennent :</p>
+        <ul style="font-size: 16px; color: #5f5f5f; line-height: 1.8; padding-left: 20px;">
           <li>Réception</li>
-          <li>Vin d'honneur</li>
+          <li>Cocktail de bienvenue</li>
           <li>Buffet</li>
           <li>Dîner</li>
           <li>Apéritif</li>
         </ul>
       </details>
 
-      <details>
-        <summary>Combien de personnes peuvent bénéficier des services de Domaine de Barneville pour la réception de mariage ?</summary>
-        <p>Domaine de Barneville propose ses services de réception de mariage pour un maximum de <strong>170 invités</strong>.</p>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Combien de personnes peuvent bénéficier des services de réception de mariage au Domaine de Barneville ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Le Domaine de Barneville offre ses services de réception pour un maximum de <strong>170 invités</strong>.</p>
       </details>
 
-      <details>
-        <summary>Quel pourcentage d'utilisateurs recommande Domaine de Barneville et quels sont les aspects les mieux notés des services de mariage proposés par le prestataire ?</summary>
-        <p>Domaine de Barneville est recommandé par <strong>100%</strong> des couples qui ont fait appel au service de ce prestataire. Sa note globale est de <strong>5.0</strong> et il a obtenu cette note pour la qualité de son service, sa flexibilité, son rapport qualité-prix, son professionnalisme et son temps de réponse.</p>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Combien de personnes recommandent le Domaine de Barneville et quels aspects des services de mariage sont les mieux notés ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Le Domaine de Barneville est recommandé par <strong>100%</strong> des couples ayant utilisé les services de ce prestataire. La note globale est de <strong>5,0</strong>, attribuée pour la qualité du service, la flexibilité, le rapport qualité/prix, le professionnalisme et la réactivité.</p>
       </details>
 
-      <details>
-        <summary>Quelles sont les promotions offertes par Domaine de Barneville concernant les services de mariage ?</summary>
-        <p>Actuellement, Domaine de Barneville ne propose pas de promotions, mais offre <strong>des prix spéciaux pour la haute et la basse saison</strong>.</p>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Y a-t-il des offres spéciales ou des réductions pour les services de mariage ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Actuellement, il n'y a pas de promotions ou réductions, mais le Domaine de Barneville propose des <strong>prix spéciaux pour la haute et la basse saison</strong>.</p>
       </details>
 
-      <details>
-        <summary>Y a-t-il une liste de dates de mariage disponibles ?</summary>
-        <p>Nous ne fournissons pas actuellement de liste fixe des dates disponibles. Veuillez remplir le formulaire, et nous reviendrons vers vous dès que possible pour vérifier la disponibilité de la date que vous souhaitez.</p>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Y a-t-il une liste des dates de mariage disponibles ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Actuellement, nous ne proposons pas de liste fixe de dates disponibles. Veuillez remplir le formulaire et nous reviendrons vers vous dès que possible pour vérifier la disponibilité pour la date souhaitée.</p>
       </details>
 
-      <details>
-        <summary>Combien de temps pouvons-nous louer Domaine de Barneville pour notre mariage ?</summary>
-        <p>Nous louons généralement Domaine de Barneville pour un week-end entier. Cependant, si vous souhaitez le louer pour une période différente, nous pouvons en discuter et l'arranger individuellement.</p>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Combien de temps pouvons-nous louer le Domaine de Barneville pour notre mariage ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Nous louons habituellement le Domaine de Barneville pour un week-end entier. Cependant, si vous souhaitez le louer pour une période différente, nous pouvons en discuter et l'arranger de manière individuelle.</p>
       </details>
 
-      <details>
-        <summary>Quand pouvons-nous commencer à installer et décorer ?</summary>
-        <p>L'heure d'installation et de décoration peut être arrangée individuellement après discussion avec nous. Nous sommes flexibles et trouverons une solution qui vous conviendra.</p>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Quand pouvons-nous commencer à installer et décorer ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Le temps nécessaire pour l'installation et la décoration peut être arrangé individuellement après discussion avec nous. Nous sommes flexibles et trouverons une solution qui vous convient.</p>
       </details>
 
-      <details>
-        <summary>Devrons-nous nous occuper du démontage ou est-ce inclus dans le service ?</summary>
-        <p>Le démontage doit être effectué par vos soins, mais nous avons de bons contacts avec des prestataires fiables que nous pouvons vous recommander pour faciliter cette étape.</p>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Devons-nous nous occuper du démontage, ou est-ce inclus dans le service ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Le démontage doit être effectué par vos soins, mais nous avons de bons contacts avec des prestataires fiables que nous pouvons vous recommander pour rendre ce processus aussi facile que possible.</p>
       </details>
 
-      <details>
-        <summary>Y a-t-il suffisamment de places de parking pour tous nos invités ?</summary>
-        <p>Oui, nous disposons d'un très grand parking, offrant amplement d'espace pour tous vos invités.</p>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Y a-t-il suffisamment de places de parking pour tous nos invités ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Oui, nous disposons d'un très grand parking avec suffisamment d'espace pour tous vos invités.</p>
       </details>
 
-      <details>
-        <summary>Domaine de Barneville propose-t-il un service de navette pour les invités qui ne peuvent pas venir en voiture ?</summary>
-        <p>Malheureusement, nous ne proposons pas de service de navette, mais nous pouvons vous référer à des prestataires appropriés qui peuvent gérer le transport pour vos invités.</p>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Le Domaine de Barneville propose-t-il un service de navette pour les invités qui ne peuvent pas venir en voiture ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Malheureusement, nous ne proposons pas de service de navette, mais nous pouvons vous orienter vers des prestataires adaptés qui peuvent aider à organiser le transport de vos invités.</p>
       </details>
 
-      <details>
-        <summary>Domaine de Barneville est-il facilement accessible en transports en commun pour les invités venant de loin ?</summary>
-        <p>Domaine de Barneville est facilement accessible : l'aéroport de Deauville est à seulement 10 minutes, et la gare principale de Deauville-Trouville propose des connexions directes depuis Paris. Alternativement, vos invités peuvent prendre un vol pour les aéroports CDG ou Orly à Paris, qui se trouvent à environ 2,5 heures.</p>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Le Domaine de Barneville est-il facilement accessible en transports publics pour les invités venant de loin ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Le Domaine de Barneville est facilement accessible : l'aéroport de Deauville est à seulement 10 minutes, et la gare principale de Deauville-Trouville propose des connexions directes depuis Paris. Alternativement, les invités peuvent voler vers les aéroports CDG ou Orly à Paris, situés à environ 2,5 heures.</p>
       </details>
 
-      <details>
-        <summary>Qu'est-ce qui est inclus dans le prix de la location ? Le catering et les boissons sont-ils inclus ou doivent-ils être réservés séparément ?</summary>
-        <p>Le catering et les boissons ne sont pas inclus dans le prix de location et doivent être organisés séparément. Cependant, nous serons heureux de vous aider à trouver un excellent traiteur grâce à nos contacts et recommandations.</p>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Qu'est-ce qui est inclus dans le prix de location ? Le service traiteur et les boissons sont-ils inclus ou doivent-ils être réservés séparément ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Le service traiteur et les boissons ne sont pas inclus dans le prix de location et doivent être réservés séparément. Cependant, nous sommes heureux de vous aider à trouver un excellent traiteur grâce à nos contacts et recommandations.</p>
       </details>
 
-      <details>
-        <summary>Proposez-vous différents forfaits de mariage et qu'est-ce qui est inclus dans chaque forfait ?</summary>
-        <p>Nous ne proposons pas actuellement de forfaits fixes de mariage. Nous travaillons avec vous pour créer le forfait parfait, adapté à vos besoins. Faites-nous savoir ce que vous recherchez, et nous vous aiderons à le réaliser !</p>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Proposez-vous des forfaits de mariage différents et que comprend chaque forfait ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Nous ne proposons actuellement pas de forfaits fixes pour les mariages. Nous travaillons avec vous pour créer le forfait parfait, adapté à vos besoins. Faites-nous savoir ce que vous recherchez, et nous vous aiderons à le réaliser !</p>
       </details>
 
-      <details>
-        <summary>Proposez-vous des services supplémentaires comme un planificateur de mariage ou un service de décoration ?</summary>
-        <p>Nous ne proposons pas de planificateur de mariage ou de services de décoration en interne, mais nous pouvons vous recommander des partenaires fiables avec lesquels nous avons eu de bonnes expériences.</p>
-      </details>
-
-      <details>
-        <summary>Que se passe-t-il si le jour de notre mariage il pleut ? Y a-t-il une solution en cas de mauvais temps pour la cérémonie ou la réception ?</summary>
-        <p>En cas de mauvais temps, nous proposons des tentes étanches, de sorte que votre cérémonie et votre réception puissent avoir lieu sans souci. Un petit conseil : c'est le charme de la Normandie – la pluie fait partie de l'expérience !</p>
-      </details>
-
-      <details>
-        <summary>Pouvons-nous utiliser la tente pendant la basse saison, ou est-elle uniquement disponible en haute saison ?</summary>
-        <p>La tente est disponible toute l'année, y compris pendant la basse saison. Si vous planifiez un mariage d'hiver ou un événement à une autre période de l'année, nous pouvons l'organiser pour vous.</p>
-      </details>
-
-      <details>
-        <summary>Pouvons-nous apporter nos propres décorations ou y a-t-il des restrictions sur la décoration ?</summary>
-        <p>Bien sûr, vous pouvez apporter vos propres décorations ! Nous souhaitons que votre mariage soit aussi personnalisé que possible et sommes ravis si vous apportez vos touches personnelles.</p>
-      </details>
-
-      <details>
-        <summary>Avez-vous des recommandations pour un fleuriste, un photographe ou un DJ ?</summary>
-        <p>Oui, nous avons une bonne vue d'ensemble des prestataires de la région avec lesquels nous avons travaillé régulièrement. Si vous le souhaitez, nous pouvons vous recommander des fleuristes, photographes, DJ et autres prestataires pour rendre votre mariage inoubliable.</p>
-      </details>
-
-      <details>
-        <summary>Y a-t-il des restrictions concernant l'éclairage ou la musique, comme le volume ou la conception de l'éclairage ?</summary>
-        <p>Il n'y a pas de restrictions concernant l'éclairage ou la musique – vous pouvez créer l'ambiance comme vous le souhaitez. Il n'y a pas de limites de volume, et vous pouvez personnaliser l'éclairage et la musique à votre guise.</p>
-      </details>
-
-      <details>
-        <summary>Y a-t-il des hôtels ou des hébergements à proximité pour nos invités ?</summary>
-        <p>Oui, comme Domaine de Barneville est situé dans une région touristique populaire, il y a de nombreux hôtels et hébergements à proximité. Nous pouvons également vous fournir une liste de recommandations si vous le souhaitez.</p>
-      </details>
-
-      <details>
-        <summary>Domaine de Barneville propose-t-il des hébergements ou des logements pour la nuit ?</summary>
-        <p>Oui, nous proposons des hébergements pour vos invités. Nous serions ravis de vous communiquer les options disponibles et de vous aider à trouver les meilleurs hébergements.</p>
-      </details>
-
-      <details>
-        <summary>Pouvons-nous apporter notre propre gâteau de mariage ?</summary>
-        <p>Oui, vous pouvez apporter votre propre gâteau de mariage. Nous voulons que votre mariage soit parfait et nous vous soutiendrons de toutes les manières possibles !</p>
-      </details>
-
-      <details>
-        <summary>Y a-t-il des restrictions concernant le volume de la musique ou de la fête ?</summary>
-        <p>Non, il n'y a aucune restriction concernant le volume de votre fête. Vous pouvez célébrer aussi fort que vous le souhaitez – Domaine de Barneville offre suffisamment d'espace pour une fête sans souci !</p>
-      </details>
-
-      <details>
-        <summary>Jusqu'à quelle heure pouvons-nous célébrer ? Y a-t-il une heure limite ?</summary>
-        <p>Il n'y a pas d'heure limite ! Vous pouvez célébrer aussi longtemps que vous le souhaitez – nous voulons que votre mariage soit inoubliable sous tous ses aspects.</p>
-      </details>
-
-      <details>
-        <summary>Comment Domaine de Barneville gère-t-il les précautions de sécurité ?</summary>
-        <p>Domaine de Barneville prend toutes les précautions de sécurité nécessaires pour que votre événement se déroule de manière sûre et fluide. Il y a toujours une personne de contact sur place pour vous aider avec toute question liée à la sécurité.</p>
-      </details>
-
-      <details>
-        <summary>Pouvons-nous organiser une cérémonie religieuse ou culturelle chez Domaine de Barneville ?</summary>
-        <p>Oui, nous offrons la possibilité d'organiser une cérémonie religieuse ou culturelle selon vos souhaits. Qu'il s'agisse d'une cérémonie civile ou traditionnelle – nous vous accompagnons pour réaliser le mariage de vos rêves.</p>
-      </details>
-
-      <details>
-        <summary>Quelle est la disponibilité des équipements techniques (haut-parleurs, micros, projecteurs, etc.) ?</summary>
-        <p>Domaine de Barneville vous fournit des branchements électriques et d'eau, mais les haut-parleurs, micros et projecteurs doivent être loués auprès de prestataires externes. Nous serons heureux de vous mettre en relation avec les bons contacts pour cela.</p>
-      </details>
-
-      <details>
-        <summary>Qui est la personne de contact sur place ?</summary>
-        <p>Nous nous assurons qu'il y ait toujours une personne de contact sur place qui vous assistera pendant la planification et lors de l'événement. Vous n'aurez à vous soucier de rien – nous sommes là pour vous !</p>
+      <details style="margin-bottom: 20px;">
+        <summary style="font-family: 'Playfair Display', serif; font-size: 24px; color: #C7A27A;">Proposez-vous des services supplémentaires comme un organisateur de mariage ou un service de décoration ?</summary>
+        <p style="font-size: 16px; color: #5f5f5f; line-height: 1.8;">Nous ne proposons pas nous-mêmes de services d'organisateur de mariage ou de décoration, mais nous pouvons vous recommander des partenaires fiables avec qui nous avons eu d'excellentes expériences.</p>
       </details>
     </div>
   </div>
@@ -403,18 +412,87 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
   </main>
 
   <footer>
-    <div class="wrap footer-grid">
-      <div><p class="muted">© 2025 Domaine de Barneville. Tous droits réservés.</p></div>
-      <div><a class="muted" href="#faq">FAQ</a></div>
-      <div><a class="muted" href="#contact">Contact</a></div>
-      <div><a class="muted" href="en/">EN</a> • <a class="muted" href="de/">DE</a></div>
+  <div class="wrap footer-grid">
+    <div><p class="muted">© 2025 Domaine de Barneville. Tous droits réservés.</p></div>
+    <div><a class="muted" href="#faq">FAQ</a></div>
+    <div><a class="muted" href="#contact">Contact</a></div>
+    <div><a class="muted" href="/">FR</a> • <a class="muted" href="/de/">DE</a></div>
+    <div>
+      <a class="muted" href="javascript:void(0);" id="legalsToggle">Mentions légales</a>
     </div>
-  </footer>
+  </div>
 
-  <script>
-    const burger=document.querySelector('.burger');const drawer=document.getElementById('drawer');
-    if(burger&&drawer){burger.addEventListener('click',()=>drawer.classList.toggle('open'));drawer.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>drawer.classList.remove('open')));}
-    const slides=[...document.querySelectorAll('.slide')];let i=0;setInterval(()=>{slides[i].classList.remove('active');i=(i+1)%slides.length;slides[i].classList.add('active');},4500);
-  </script>
+  <!-- Cookie Banner (only visible on the first visit) -->
+  <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background-color: #C7A27A; color: white; padding: 15px; text-align: center;">
+    <p>Nous utilisons des cookies pour améliorer votre expérience sur notre site Web. Pour plus d'informations, veuillez consulter notre <a href="#cookie-policy" style="color: white; text-decoration: underline;">Politique de Cookies</a>.</p>
+    <button id="accept-cookies" style="background-color: #fff; color: #C7A27A; border: none; padding: 10px 20px; cursor: pointer;" onclick="this.parentElement.style.display='none';">Accepter</button>
+  </div>
+
+  <!-- Accordion for legal texts -->
+  <section id="legal-texts" style="padding: 20px; display: none;">
+    <h2>Informations légales</h2>
+
+    <!-- Legal Notices (Mentions Légales) -->
+    <details>
+      <summary><strong>Mentions légales</strong></summary>
+      <p><strong>Client :</strong> Toute personne professionnelle ou individuelle capable en vertu des articles 1123 et suivants du Code civil, ou une personne morale, visitant le site internet régit par ces conditions générales.</p>
+      <p><strong>Services :</strong> Domaine de Barneville offre les services suivants :
+        <ul>
+          <li>Location de lieu pour événements</li>
+          <li>Services d'organisation d'événements</li>
+          <li>Services associés supplémentaires</li>
+        </ul>
+      </p>
+      <p><strong>Contenu :</strong> Tous les éléments constituant les informations disponibles sur le site, y compris les textes, images et vidéos.</p>
+      <p><strong>Informations client :</strong> Toute donnée personnelle que Domaine de Barneville pourrait détenir pour gérer votre compte, les relations avec les clients, ainsi que pour des fins analytiques et statistiques.</p>
+      <p><strong>Utilisateur :</strong> Toute personne accédant et utilisant le site internet mentionné.</p>
+      <p><strong>Informations personnelles :</strong> Informations qui identifient directement ou indirectement des individus (Article 4 de la loi n° 78-17 du 6 janvier 1978).</p>
+      <p><strong>Termes des données personnelles :</strong> Termes comme "données personnelles", "personne concernée", "responsable du traitement" et "données sensibles" sont définis selon le Règlement Général sur la Protection des Données (RGPD : n° 2016-679).</p>
+    </details>
+
+    <!-- Website Presentation -->
+    <details>
+      <summary><strong>Présentation du site</strong></summary>
+      <p>Conformément à l'Article 6 de la Loi n° 2004-575 du 21 juin 2004 pour la confiance dans l'économie numérique, les informations suivantes sont fournies aux utilisateurs du site <a href="https://domainedebarneville.fr">https://domainedebarneville.fr</a> concernant l'identité des personnes impliquées dans sa création et sa gestion :</p>
+      <p><strong>Propriétaire :</strong> Domaine de Barneville</p>
+      <p><strong>Capital :</strong> 20 000 €</p>
+      <p><strong>Numéro de TVA :</strong> FR06418709713</p>
+      <p><strong>Adresse :</strong> 9 Route de Barneville, 14130 Saint-Gatien-des-Bois, France</p>
+      <p><strong>Responsable de la publication :</strong> Mme [Nom] – <a href="mailto:info@domainedebarneville.fr">info@domainedebarneville.fr</a></p>
+      <p><strong>Webmaster :</strong> [Nom du webmaster] – [Email du webmaster]</p>
+      <p><strong>Hébergeur :</strong> [Nom de l'hébergeur] – [Adresse de l'hébergeur]</p>
+      <p><strong>Délégué à la protection des données :</strong> Mme [Nom] – <a href="mailto:info@domainedebarneville.fr">info@domainedebarneville.fr</a></p>
+    </details>
+
+    <!-- Terms of Use -->
+    <details>
+      <summary><strong>Conditions d'utilisation du site et des services</strong></summary>
+      <p>Le Site constitue une propriété intellectuelle protégée par le Code de la Propriété Intellectuelle et les règlements internationaux applicables. Le Client ne peut pas réutiliser, transférer ou exploiter toute partie du Site pour son usage personnel sans l'accord préalable écrit de Domaine de Barneville. En utilisant le site <a href="https://domainedebarneville.fr">https://domainedebarneville.fr</a>, vous acceptez pleinement les conditions d'utilisation décrites ci-dessous. Ces conditions peuvent être modifiées à tout moment, nous encourageons donc les utilisateurs à les consulter régulièrement.</p>
+      <p>Ce site est normalement accessible en tout temps, à l'exception des périodes de maintenance, pendant lesquelles Domaine de Barneville informera les utilisateurs des dates et heures des interventions. Le site est régulièrement mis à jour, tout comme les mentions légales.</p>
+    </details>
+
+    <!-- Description of Services -->
+    <details>
+      <summary><strong>Description des services fournis</strong></summary>
+      <p>Le site <a href="https://domainedebarneville.fr">https://domainedebarneville.fr</a> fournit des informations concernant les services de Domaine de Barneville, qui incluent la location de lieu, l'organisation d'événements et d'autres services associés. Bien que Domaine de Barneville s'efforce de fournir des informations précises et à jour, il ne peut être tenu responsable des omissions, inexactitudes ou lacunes dans les mises à jour, qu'elles proviennent de ses propres actions ou de celles des partenaires tiers fournissant de telles informations.</p>
+    </details>
+
+    <!-- Additional Legal Texts ... -->
+
+  </section>
+</footer>
+
+<script>
+  // Toggle visibility for the legal notices section
+  document.getElementById('legalsToggle').addEventListener('click', function() {
+    var legalTexts = document.getElementById('legal-texts');
+    if (legalTexts.style.display === 'none' || legalTexts.style.display === '') {
+      legalTexts.style.display = 'block';
+    } else {
+      legalTexts.style.display = 'none';
+    }
+  });
+</script>
+
 </body>
 </html>
