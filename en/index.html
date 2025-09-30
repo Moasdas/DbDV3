@@ -280,6 +280,102 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
   </div>
 </section>
 
+    <section id="reviews">
+  <div class="wrap">
+    <h2>What Our Guests Are Saying</h2>
+    <div class="review-slider">
+      <div class="review-slide">
+        <div class="review-card">
+          <p style="font-size: 18px; font-style: italic;">"Superbe lieu de mariage avec un charme particulier. Les maisons sont aménagées avec beaucoup d'amour et l'organisation a super bien fonctionné."</p>
+          <p><strong>- Local Guide</strong></p>
+          <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+          <p>Visited in July</p>
+        </div>
+        <div class="review-card">
+          <p style="font-size: 18px; font-style: italic;">"Absolutely outstanding. Location service and atmosphere 10 out of 10. ⭐⭐⭐⭐⭐ I had the chance to spend a special day here and honestly everything was perfect."</p>
+          <p><strong>- Local Guide</strong></p>
+          <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+          <p>Visited in July</p>
+        </div>
+        <div class="review-card">
+          <p style="font-size: 18px; font-style: italic;">"I recently attended a wedding at this stunning venue as a guest and was absolutely blown away by how special and thoughtfully designed everything was. The property offers multiple spacious meadows for different parts of the celebration."</p>
+          <p><strong>- Carla Hartwein</strong></p>
+          <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+          <p>Visited in July</p>
+        </div>
+      </div>
+      <!-- More slides can be added here -->
+    </div>
+    <div class="navigation-buttons" style="text-align: center; margin-top: 20px;">
+      <button class="prev" onclick="changeSlide(-1)">&#10094; Prev</button>
+      <button class="next" onclick="changeSlide(1)">Next &#10095;</button>
+    </div>
+  </div>
+</section>
+
+<style>
+  #reviews {
+    padding: 40px 0;
+    background-color: #FBFAF8;
+  }
+  .review-slider {
+    display: flex;
+    overflow: hidden;
+    position: relative;
+  }
+  .review-slide {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  .review-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+    width: 300px;
+  }
+  .review-rating {
+    color: #C7A27A;
+    font-weight: bold;
+  }
+  .navigation-buttons {
+    text-align: center;
+    margin-top: 20px;
+  }
+  .navigation-buttons button {
+    background-color: #C7A27A;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .navigation-buttons button:hover {
+    background-color: #B08C6D;
+  }
+</style>
+
+<script>
+  let currentSlideIndex = 0;
+
+  function changeSlide(direction) {
+    const slides = document.querySelectorAll('.review-slide');
+    const totalSlides = slides.length;
+
+    currentSlideIndex += direction;
+
+    if (currentSlideIndex >= totalSlides) {
+      currentSlideIndex = 0;  // Loop back to first slide
+    } else if (currentSlideIndex < 0) {
+      currentSlideIndex = totalSlides - 1;  // Loop to the last slide
+    }
+
+    // Move the slider to the appropriate position
+    document.querySelector('.review-slider').style.transform = `translateX(-${currentSlideIndex * 320}px)`;
+  }
+</script>
+
 
      <section id="faq">
   <div class="wrap">
