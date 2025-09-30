@@ -434,10 +434,10 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
     </div>
   </div>
   
-  <!-- Cookie Banner -->
+ <!-- Cookie Banner (only visible on the first visit) -->
   <div id="cookie-banner" style="position: fixed; bottom: 0; width: 100%; background-color: #C7A27A; color: white; padding: 15px; text-align: center;">
     <p>We use cookies to improve your experience on our website. For more information, please see our <a href="#cookie-policy" style="color: white; text-decoration: underline;">Cookie Policy</a>.</p>
-    <button id="accept-cookies" style="background-color: #fff; color: #C7A27A; border: none; padding: 10px 20px; cursor: pointer;">Accept</button>
+    <button id="accept-cookies" style="background-color: #fff; color: #C7A27A; border: none; padding: 10px 20px; cursor: pointer;" onclick="this.parentElement.style.display='none';">Accept</button>
   </div>
 
   <!-- Accordion for legal texts -->
@@ -445,35 +445,35 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
     <h2>Legal Information</h2>
 
     <!-- Impressum (Legal Notice) -->
-    <button class="accordion">Impressum (Legal Notice)</button>
-    <div class="panel">
+    <details>
+      <summary><strong>Impressum (Legal Notice)</strong></summary>
       <p><strong>Operator:</strong> Domaine de Barneville</p>
       <p><strong>Address:</strong> Example Street 123, 12345 Sample City, France</p>
       <p><strong>Phone:</strong> +33 1 23 45 67 89</p>
       <p><strong>Email:</strong> <a href="mailto:info@domainedebarneville.fr">info@domainedebarneville.fr</a></p>
       <p><strong>VAT ID:</strong> FR1234567890</p>
       <p><strong>Content Responsible:</strong> Maximilian Mustermann</p>
-    </div>
+    </details>
 
     <!-- Privacy Policy -->
-    <button class="accordion">Privacy Policy</button>
-    <div class="panel">
+    <details>
+      <summary><strong>Privacy Policy</strong></summary>
       <p>We collect personal data to communicate with you. After the wedding, all personal data will be deleted.</p>
       <p>Your data will not be shared with third parties unless necessary for the execution of the wedding.</p>
       <p>For more information, please refer to the detailed Privacy Policy.</p>
-    </div>
+    </details>
 
     <!-- Cookie Policy -->
-    <button class="accordion">Cookie Policy</button>
-    <div class="panel">
+    <details>
+      <summary><strong>Cookie Policy</strong></summary>
       <p>This website uses cookies to improve the user experience. For more details on the cookies used, please see here.</p>
-    </div>
+    </details>
 
     <!-- Disclaimer -->
-    <button class="accordion">Disclaimer</button>
-    <div class="panel">
+    <details>
+      <summary><strong>Disclaimer</strong></summary>
       <p>The content on this website has been created with the utmost care. However, we do not take responsibility for the accuracy or completeness of the information.</p>
-    </div>
+    </details>
   </section>
 
   
