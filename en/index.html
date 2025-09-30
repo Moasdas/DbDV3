@@ -196,56 +196,8 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
       <a href="../images/photo8.jpg"><img src="../images/photo8.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></a>
       <a href="../images/photo9.jpg"><img src="../images/photo9.jpg" alt="" style="width: 100%; height: 100%; object-fit: cover;"></a>
     </div>
-    <button style="margin-top: 20px; padding: 10px 20px; background-color: #C7A27A; color: white; border: none; border-radius: 5px; cursor: pointer;">Want to see more photos</button>
-  </div>
+  
 </section>
-
-<!-- JavaScript for the slideshow -->
-<script>
-  let slideIndex = 0;
-  showSlides();
-
-  // Show slides every 3 seconds
-  function showSlides() {
-    let slides = document.getElementsByClassName("slide");
-
-    // Hide all slides
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-
-    // Show the current slide
-    slideIndex++;
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    slides[slideIndex - 1].style.display = "block";
-
-    // Change slide every 3 seconds
-    setTimeout(showSlides, 3000); 
-  }
-
-  // Function to move to the next or previous slide
-  function plusSlides(n) {
-    slideIndex += n;
-    let slides = document.getElementsByClassName("slide");
-
-    if (slideIndex > slides.length) { slideIndex = 1 }
-    if (slideIndex < 1) { slideIndex = slides.length }
-    
-    // Manually show the slide
-    showSlidesManually();
-  }
-
-  function showSlidesManually() {
-    let slides = document.getElementsByClassName("slide");
-
-    // Hide all slides
-    for (let i = 0; i < slides.length; i++) {
-      slides[i].style.display = "none";
-    }
-
-    slides[slideIndex - 1].style.display = "block";
-  }
-</script>
 
 
 
@@ -285,32 +237,39 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
     <h2>What Our Guests Are Saying</h2>
     <div class="review-slider">
       <div class="review-slide">
-        <div class="review-card">
-          <p style="font-size: 18px; font-style: italic;">"Superbe lieu de mariage avec un charme particulier. Les maisons sont aménagées avec beaucoup d'amour et l'organisation a super bien fonctionné."</p>
-          <p><strong>- Local Guide</strong></p>
-          <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
-          <p>Visited in July</p>
-        </div>
-        <div class="review-card">
-          <p style="font-size: 18px; font-style: italic;">"Absolutely outstanding. Location service and atmosphere 10 out of 10. ⭐⭐⭐⭐⭐ I had the chance to spend a special day here and honestly everything was perfect."</p>
-          <p><strong>- Local Guide</strong></p>
-          <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
-          <p>Visited in July</p>
-        </div>
+        
         <div class="review-card">
           <p style="font-size: 18px; font-style: italic;">"I recently attended a wedding at this stunning venue as a guest and was absolutely blown away by how special and thoughtfully designed everything was. The property offers multiple spacious meadows for different parts of the celebration."</p>
           <p><strong>- Carla Hartwein</strong></p>
           <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
           <p>Visited in July</p>
         </div>
-      </div>
-      <!-- More slides can be added here -->
+
+        <!-- Review 6 -->
+    <div class="review-card">
+      <p style="font-size: 18px; font-style: italic;">"Stunning location!"</p>
+      <p><strong>- Johanna Ballesteros</strong></p>
+      <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+      <p>Visited in July</p>
     </div>
-    <div class="navigation-buttons" style="text-align: center; margin-top: 20px;">
-      <button class="prev" onclick="changeSlide(-1)">&#10094; Prev</button>
-      <button class="next" onclick="changeSlide(1)">Next &#10095;</button>
+
+    <!-- Review 7 -->
+    <div class="review-card">
+      <p style="font-size: 18px; font-style: italic;">"Exceptional location for an incredible weekend! We hosted our wedding in June 2025 in this magnificent, well-maintained estate, decorated with flowers and large enough to accommodate three spaces: ceremony, dinner, and dancing!"</p>
+      <p><strong>- juliette Spriet</strong></p>
+      <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+      <p>Visited in June</p>
     </div>
-  </div>
+
+         <!-- Review 9 -->
+    <div class="review-card">
+      <p style="font-size: 18px; font-style: italic;">"A magnificent place, perfectly located near Deauville! An extremely warm welcome, and very high-quality services!"</p>
+      <p><strong>- Karthik Rangan</strong></p>
+      <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+      <p>Visited in August</p>
+    </div>
+        
+  
 </section>
 
 <style>
