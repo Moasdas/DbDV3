@@ -248,6 +248,7 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
     <div class="review-slider">
       <div class="review-slide">
         
+        <!-- Review 1 -->
         <div class="review-card">
           <p style="font-size: 18px; font-style: italic;">"I recently attended a wedding at this stunning venue as a guest and was absolutely blown away by how special and thoughtfully designed everything was. The property offers multiple spacious meadows for different parts of the celebration."</p>
           <p><strong>- Carla Hartwein</strong></p>
@@ -255,95 +256,44 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
           <p>Visited in July</p>
         </div>
 
-        <!-- Review 6 -->
-    <div class="review-card">
-      <p style="font-size: 18px; font-style: italic;">"Stunning location!"</p>
-      <p><strong>- Johanna Ballesteros</strong></p>
-      <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
-      <p>Visited in July</p>
+        <!-- Review 2 -->
+        <div class="review-card">
+          <p style="font-size: 18px; font-style: italic;">"Stunning location!"</p>
+          <p><strong>- Johanna Ballesteros</strong></p>
+          <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+          <p>Visited in July</p>
+        </div>
+
+        <!-- Review 3 -->
+        <div class="review-card">
+          <p style="font-size: 18px; font-style: italic;">"Exceptional location for an incredible weekend! We hosted our wedding in June 2025 in this magnificent, well-maintained estate, decorated with flowers and large enough to accommodate three spaces: ceremony, dinner, and dancing!"</p>
+          <p><strong>- Juliette Spriet</strong></p>
+          <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+          <p>Visited in June</p>
+        </div>
+
+        <!-- Review 4 -->
+        <div class="review-card">
+          <p style="font-size: 18px; font-style: italic;">"A magnificent place, perfectly located near Deauville! An extremely warm welcome, and very high-quality services!"</p>
+          <p><strong>- Karthik Rangan</strong></p>
+          <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+          <p>Visited in August</p>
+        </div>
+      </div>
     </div>
 
-    <!-- Review 7 -->
-    <div class="review-card">
-      <p style="font-size: 18px; font-style: italic;">"Exceptional location for an incredible weekend! We hosted our wedding in June 2025 in this magnificent, well-maintained estate, decorated with flowers and large enough to accommodate three spaces: ceremony, dinner, and dancing!"</p>
-      <p><strong>- juliette Spriet</strong></p>
-      <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
-      <p>Visited in June</p>
+    <!-- More Reviews Button -->
+    <div style="text-align: center; margin-top: 20px;">
+      <a href="https://www.google.de/maps/place/Domaine+de+Barneville/@49.3733453,0.1799143,17z/data=!4m8!3m7!1s0x47e03305ff880895:0x78e6b6138244acfc!8m2!3d49.3733453!4d0.1824892!9m1!1b1!16s%2Fg%2F11w55w52sp?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
+        <button style="background-color: #C7A27A; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 18px; cursor: pointer;">
+          More Reviews
+        </button>
+      </a>
     </div>
-
-         <!-- Review 9 -->
-    <div class="review-card">
-      <p style="font-size: 18px; font-style: italic;">"A magnificent place, perfectly located near Deauville! An extremely warm welcome, and very high-quality services!"</p>
-      <p><strong>- Karthik Rangan</strong></p>
-      <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
-      <p>Visited in August</p>
-    </div>
-        
-  
+  </div>
 </section>
 
-<style>
-  #reviews {
-    padding: 40px 0;
-    background-color: #FBFAF8;
-  }
-  .review-slider {
-    display: flex;
-    overflow: hidden;
-    position: relative;
-  }
-  .review-slide {
-    display: flex;
-    transition: transform 0.5s ease-in-out;
-  }
-  .review-card {
-    background-color: #fff;
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-    margin-right: 20px;
-    width: 300px;
-  }
-  .review-rating {
-    color: #C7A27A;
-    font-weight: bold;
-  }
-  .navigation-buttons {
-    text-align: center;
-    margin-top: 20px;
-  }
-  .navigation-buttons button {
-    background-color: #C7A27A;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  .navigation-buttons button:hover {
-    background-color: #B08C6D;
-  }
-</style>
 
-<script>
-  let currentSlideIndex = 0;
-
-  function changeSlide(direction) {
-    const slides = document.querySelectorAll('.review-slide');
-    const totalSlides = slides.length;
-
-    currentSlideIndex += direction;
-
-    if (currentSlideIndex >= totalSlides) {
-      currentSlideIndex = 0;  // Loop back to first slide
-    } else if (currentSlideIndex < 0) {
-      currentSlideIndex = totalSlides - 1;  // Loop to the last slide
-    }
-
-    // Move the slider to the appropriate position
-    document.querySelector('.review-slider').style.transform = `translateX(-${currentSlideIndex * 320}px)`;
-  }
-</script>
 
 
      <section id="faq">
