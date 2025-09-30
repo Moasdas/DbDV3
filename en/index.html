@@ -245,55 +245,75 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
     <section id="reviews">
   <div class="wrap">
     <h2>What Our Guests Are Saying</h2>
-    <div class="review-slider">
-      <div class="review-slide">
-        
-        <!-- Review 1 -->
-        <div class="review-card">
-          <p style="font-size: 18px; font-style: italic;">"I recently attended a wedding at this stunning venue as a guest and was absolutely blown away by how special and thoughtfully designed everything was. The property offers multiple spacious meadows for different parts of the celebration."</p>
-          <p><strong>- Carla Hartwein</strong></p>
-          <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
-          <p>Visited in July</p>
-        </div>
 
-        <!-- Review 2 -->
-        <div class="review-card">
-          <p style="font-size: 18px; font-style: italic;">"Stunning location!"</p>
-          <p><strong>- Johanna Ballesteros</strong></p>
-          <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
-          <p>Visited in July</p>
-        </div>
+    <div class="reviews-grid">
+      <!-- Review 1 -->
+      <div class="review-card">
+        <p style="font-size: 18px; font-style: italic;">"Superbe lieu de mariage avec un charme particulier. Les maisons sont aménagées avec beaucoup d'amour et l'organisation a super bien fonctionné."</p>
+        <p><strong>- Local Guide</strong></p>
+        <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+        <p>Visited in July</p>
+      </div>
 
-        <!-- Review 3 -->
-        <div class="review-card">
-          <p style="font-size: 18px; font-style: italic;">"Exceptional location for an incredible weekend! We hosted our wedding in June 2025 in this magnificent, well-maintained estate, decorated with flowers and large enough to accommodate three spaces: ceremony, dinner, and dancing!"</p>
-          <p><strong>- Juliette Spriet</strong></p>
-          <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
-          <p>Visited in June</p>
-        </div>
+      <!-- Review 2 -->
+      <div class="review-card">
+        <p style="font-size: 18px; font-style: italic;">"Absolutely outstanding. Location service and atmosphere 10 out of 10. ⭐⭐⭐⭐⭐ I had the chance to spend a special day here and honestly everything was perfect."</p>
+        <p><strong>- Local Guide</strong></p>
+        <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+        <p>Visited in July</p>
+      </div>
 
-        <!-- Review 4 -->
-        <div class="review-card">
-          <p style="font-size: 18px; font-style: italic;">"A magnificent place, perfectly located near Deauville! An extremely warm welcome, and very high-quality services!"</p>
-          <p><strong>- Karthik Rangan</strong></p>
-          <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
-          <p>Visited in August</p>
-        </div>
+      <!-- Review 3 -->
+      <div class="review-card">
+        <p style="font-size: 18px; font-style: italic;">"I recently attended a wedding at this stunning venue as a guest and was absolutely blown away by how special and thoughtfully designed everything was. The property offers multiple spacious meadows for different parts of the celebration."</p>
+        <p><strong>- Carla Hartwein</strong></p>
+        <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+        <p>Visited in July</p>
+      </div>
+
+      <!-- Review 4 -->
+      <div class="review-card">
+        <p style="font-size: 18px; font-style: italic;">"Absolutely stunning wedding venue! Everything was beautifully set up, with a magical atmosphere throughout the entire property. The charming houses and perfectly maintained gardens made for an unforgettable setting. Communication and coordination were also flawless!"</p>
+        <p><strong>- Marcel M</strong></p>
+        <p class="review-rating" style="color: #C7A27A; font-weight: bold;">⭐⭐⭐⭐⭐</p>
+        <p>Visited in April</p>
       </div>
     </div>
 
-    <!-- More Reviews Button -->
-    <div style="text-align: center; margin-top: 20px;">
-      <a href="https://www.google.de/maps/place/Domaine+de+Barneville/@49.3733453,0.1799143,17z/data=!4m8!3m7!1s0x47e03305ff880895:0x78e6b6138244acfc!8m2!3d49.3733453!4d0.1824892!9m1!1b1!16s%2Fg%2F11w55w52sp?entry=ttu&g_ep=EgoyMDI1MDkyOC4wIKXMDSoASAFQAw%3D%3D" target="_blank">
-        <button style="background-color: #C7A27A; color: white; padding: 10px 20px; border: none; border-radius: 5px; font-size: 18px; cursor: pointer;">
-          More Reviews
-        </button>
-      </a>
+    <div class="more-reviews" style="text-align: center; margin-top: 30px;">
+      <a href="https://www.google.com/maps/place/Domaine+de+Barneville" target="_blank" style="color: #C7A27A; text-decoration: none; font-size: 18px;">See more reviews on Google</a>
     </div>
   </div>
 </section>
 
-
+<style>
+  #reviews {
+    padding: 40px 0;
+    background-color: #FBFAF8;
+  }
+  .reviews-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+  }
+  .review-card {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 250px;
+    text-align: center;
+  }
+  .review-rating {
+    color: #C7A27A;
+    font-weight: bold;
+  }
+  .more-reviews {
+    margin-top: 30px;
+    text-align: center;
+  }
+</style>
 
 
      <section id="faq">
