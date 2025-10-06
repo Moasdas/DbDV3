@@ -74,7 +74,8 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
 <body>
 
 <header class="site-header">
-  <div class="wrap header-inner">
+  <div class="wrap header-inner"
+       style="display:flex;align-items:center;justify-content:space-between;gap:12px">
     <a class="brand" href="/fr/">
       <img src="../images/logo.png" alt="">
       <strong>Domaine de Barneville</strong>
@@ -87,17 +88,25 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
       <a href="#contact" class="btn">Obtenir un devis</a>
     </nav>
 
-    <div class="right">
-      <div class="langs">
+    <div class="right"
+         style="display:flex;align-items:center;gap:12px">
+      <div class="langs"
+           style="display:flex;gap:8px;flex-wrap:nowrap;white-space:nowrap">
         <a href="/" class="active">FR</a>
         <a href="/en/">EN</a>
         <a href="/de/">DE</a>
       </div>
+
       <!-- Instagram Icon -->
       <a href="https://www.instagram.com/domaine_de_barneville_?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" target="_blank">
-        <img src="/images/instagram-icon.png" alt="Instagram" style="width:30px;height:30px;"/>
+        <img src="/images/instagram-icon.png" alt="Instagram"
+             style="width:24px;height:24px;display:block"/>
       </a>
-      <button class="burger" aria-label="Ouvrir le menu">☰</button>
+
+      <button class="burger" aria-label="Ouvrir le menu"
+              style="background:none;border:0;padding:6px;display:flex;align-items:center">
+        ☰
+      </button>
     </div>
   </div>
 
@@ -106,7 +115,7 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
     <a href="#gallery">Galerie</a>
     <a href="#faq">FAQ</a>
     <a class="btn" href="#contact">Obtenir un devis</a>
-    <div class="langs">
+    <div class="langs" style="display:flex;gap:8px;flex-wrap:nowrap;white-space:nowrap">
       <a href="/" class="active">FR</a>
       <a href="/en/">EN</a>
       <a href="/de/">DE</a>
