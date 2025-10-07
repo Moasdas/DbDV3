@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Galerie supplémentaire | Domaine de Barneville</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="description" content="Explorez plus de photos du Domaine de Barneville, un lieu magnifique pour votre mariage en Normandie, avec des vues imprenables et des installations exceptionnelles.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <style>
+    /* Simple Image Slider */
+    .slider {
+      position: relative;
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+      overflow: hidden;
+    }
+
+    .slides {
+      display: flex;
+      transition: transform 0.5s ease;
+    }
+
+    .slide {
+      min-width: 100%;
+      box-sizing: border-box;
+    }
+
+    .slider img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .dots-container {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+    }
+
+    .dot {
+      height: 10px;
+      width: 10px;
+      background-color: #bbb;
+      border-radius: 50%;
+      display: inline-block;
+      transition: background-color 0.3s ease;
+      cursor: pointer;
+    }
+
+    /* Change the color of the active dot */
+    .dot.active {
+      background-color: #C7A27A;
+    }
+
+    /* Radio Button hide */
+    input[type="radio"] {
+      display: none;
+    }
+
+    /* Style for radio button selection */
+    #slide1:checked ~ .slides {
+      transform: translateX(0);
+    }
+
+    #slide2:checked ~ .slides {
+      transform: translateX(-100%);
+    }
+
+    #slide3:checked ~ .slides {
+      transform: translateX(-200%);
+    }
+
+    /* Hide non-active dots */
+    input[type="radio"]:not(:checked) ~ .dots-container .dot {
+      opacity: 0.5;
+    }
+
+    input[type="radio"]:checked ~ .dots-container .dot {
+      opacity: 1;
+    }
+  </style>
+</head>
+<body>
+
+<header class="site-header">
+  <div class="wrap header-inner">
+    <a class="brand" href="/fr/">
+      <img src="../images/logo.png" alt="">
+      <strong>Domaine de Barneville</strong>
+    </a>
+
+    <nav aria-label="Primary">
+      <a href="#venue">Le Lieu</a>
+      <a href="#gallery">Galerie</a>
+      <a href="#faq">FAQ</a>
+      <a href="#contact" class="btn">Obtenir un devis</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <section id="gallery">
+    <div class="wrap">
+      <h2>Galerie supplémentaire</h2>
+
+      <!-- Image Slider -->
+      <div class="slider">
+        <div class="slides">
+          <!-- Slide 1 -->
+          <div class="slide">
+            <img src="../images/photo10.jpg" alt="Vue du domaine avec des jardins paisibles">
+          </div>
+          <!-- Slide 2 -->
+          <div class="slide">
+            <img src="../images/photo11.jpg" alt="Cérémonie en plein air avec des invités dans les jardins du domaine">
+          </div>
+          <!-- Slide 3 -->
+          <div class="slide">
+            <img src="../images/photo12.jpg" alt="Orangerie éclairée pour une réception élégante">
+          </div>
+          <!-- Add more slides here if needed -->
+        </div>
+
+        <!-- Dots Navigation -->
+        <div class="dots-container">
+          <label class="dot" for="slide1"></label>
+          <label class="dot" for="slide2"></label>
+          <label class="dot" for="slide3"></label>
+          <!-- Add more dots for additional slides -->
+        </div>
+
+        <!-- Radio Buttons -->
+        <input type="radio" id="slide1" name="slider" checked>
+        <input type="radio" id="slide2" name="slider">
+        <input type="radio" id="slide3" name="slider">
+        <!-- Add more radio buttons for additional slides -->
+      </div>
+
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <p class="muted">© 2025 Domaine de Barneville. Tous droits réservés.</p>
+  </div>
+</footer>
+
+</body>
+</html>
