@@ -89,7 +89,27 @@ footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
 .footer-grid{display:grid;gap:12px}
 @media(min-width:820px){.footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
 .muted{color:var(--muted)}
-</style>
+
+    /* Fix hero clipping on mobile */
+@media (max-width: 640px){
+  .hero-visual{
+    /* let the box grow with the text and keep some breathing room */
+    min-height: 58vh;          /* keep your current feel, but allow growth */
+    padding: 16px 16px calc(16px + env(safe-area-inset-bottom));
+    background-position: center;
+  }
+  .hero-copy{
+    position: static;          /* was absolute */
+    left: auto; right: auto; bottom: auto;
+    padding: 0;                /* padding is now on .hero-visual */
+  }
+  .hero-card{
+    margin: 0;                 /* avoid accidental extra overflow */
+  }
+}
+  
+  </style>
+  
 </head>
 <body>
   <header class="site-header">
