@@ -1,120 +1,87 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="fr">
 <head>
   <meta charset="utf-8">
-  <title>Domaine de Barneville — Fotogalerie</title>
+  <title>Domaine de Barneville — Galerie Photo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <meta name="description" content="Erweitere Fotogalerie des Domaine de Barneville: Orangerie, Garten, Zeremonien & Details.">
-  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta name="description" content="Galerie photo du Domaine de Barneville : Orangerie, jardins, cérémonies et détails.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
-  <!-- Favicons (same as index) -->
   <link rel="icon" href="/images/favicon-32.png" sizes="32x32" type="image/png">
   <link rel="icon" href="/images/favicon-192.png" sizes="192x192" type="image/png">
   <link rel="icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/images/apple-touch-icon-180.png" sizes="180x180">
   <meta name="theme-color" content="#FBFAF8">
-
-  <!-- Schema.org: CollectionPage / ImageGallery -->
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "CollectionPage",
-    "name": "Domaine de Barneville — Fotogalerie",
-    "isPartOf": {"@type":"WebSite","name":"Domaine de Barneville","url":"https://domainedebarneville.fr/"},
-    "about": {"@type":"Place","name":"Domaine de Barneville"},
-    "hasPart": [
-      {"@type":"ImageObject","contentUrl": "https://domainedebarneville.fr/images/photo1.jpg"},
-      {"@type":"ImageObject","contentUrl": "https://domainedebarneville.fr/images/photo2.jpg"},
-      {"@type":"ImageObject","contentUrl": "https://domainedebarneville.fr/images/photo3.jpg"}
-    ]
-  }
-  </script>
-
   <style>
-  :root{ --bg:#FBFAF8; --paper:#FFFFFF; --ink:#272626; --muted:#78736D;
-    --accent:#C7A27A; --ring:#EEE8E1; --pastel-1:#E8DFF5; --pastel-2:#FCE1E4; --pastel-3:#DDEDEA; --pastel-4:#F3EAC2;
-    --shadow:0 14px 36px rgba(0,0,0,.06);
-  }
-  *{box-sizing:border-box}
-  html{scroll-behavior:smooth}
-  body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.7}
-  img{max-width:100%;display:block}
-  a{color:inherit;text-decoration:none}
-  .wrap{max-width:1200px;margin:0 auto;padding:0 22px}
-  .btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:#fff;padding:12px 18px;border-radius:999px;font-weight:700;border:0;cursor:pointer}
-  .btn.outline{background:#fff;color:var(--ink);border:1px solid var(--ring)}
-  .card{background:var(--paper);border:1px solid var(--ring);border-radius:22px;box-shadow:var(--shadow)}
-  h1,h2,h3{font-family:'Playfair Display',serif;letter-spacing:.2px}
-
-  /* Header (same look as index) */
-  .site-header{position:sticky;top:0;z-index:60;background:rgba(251,250,248,.85);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--ring)}
-  .header-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
-  .brand{display:flex;align-items:center;gap:12px}
-  .brand img{width:56px;height:56px;object-fit:contain;border-radius:14px;border:1px solid var(--ring);background:#fff}
-  .brand strong{font-family:'Playfair Display',serif;font-size:clamp(20px,2.6vw,28px)}
-  nav a{padding:10px;font-weight:700}
-  .right{display:flex;align-items:center;gap:10px}
-  .langs a{border:1px solid var(--ring);padding:8px 12px;border-radius:999px}
-  .langs a.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-  .burger{display:none;background:transparent;border:0;font-size:26px;padding:8px}
-  .drawer{display:none}
-  @media (max-width: 900px){
-    nav{display:none}
-    .burger{display:inline-flex}
-    .drawer{position:fixed;inset:0 0 auto auto;width:min(86vw,360px);height:100vh;background:#fff;border-left:1px solid var(--ring);box-shadow:var(--shadow);padding:22px;transform:translateX(100%);transition:transform .25s ease;z-index:70;display:flex;flex-direction:column;gap:8px}
-    .drawer.open{transform:translateX(0)}
-    .drawer a{padding:12px 4px;border-bottom:1px solid var(--ring);font-weight:700}
-    .drawer .langs{margin-top:8px}
-  }
-
-  /* Hero */
-  .hero{padding:42px 0 10px}
-  .hero h1{font-size:clamp(28px,4.2vw,44px);margin:0 0 8px}
-  .lead{color:var(--muted)}
-
-  /* Filters */
-  .filters{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 6px}
-  .chip{padding:8px 14px;border:1px solid var(--ring);border-radius:999px;background:#fff;font-weight:700;cursor:pointer}
-  .chip.active{background:var(--accent);color:#fff;border-color:var(--accent)}
-
-  /* Gallery grid (masonry-like with CSS columns) */
-  .masonry{columns:2;column-gap:12px}
-  @media(min-width:760px){.masonry{columns:3}}
-  @media(min-width:1100px){.masonry{columns:4}}
-  .masonry a{display:block;break-inside:avoid;margin:0 0 12px;border-radius:16px;overflow:hidden;border:1px solid var(--ring);box-shadow:0 8px 24px rgba(0,0,0,.05)}
-  .masonry img{width:100%;height:auto;display:block;transition:transform .25s ease}
-  .masonry a:hover img{transform:scale(1.02)}
-
-  /* Lightbox */
-  .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:90}
-  .lightbox.open{display:flex}
-  .lightbox img{max-width:92vw;max-height:86vh;border-radius:12px}
-  .lb-controls{position:fixed;inset:auto 0 20px 0;display:flex;justify-content:center;gap:14px}
-  .lb-btn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(6px);color:#fff;padding:10px 14px;border-radius:999px;font-weight:700;cursor:pointer}
-  .lb-close{position:fixed;top:16px;right:16px}
-  .lb-meta{position:fixed;bottom:70px;left:50%;transform:translateX(-50%);color:#fff;text-align:center;font-size:14px;opacity:.9;padding:6px 10px;border-radius:8px;background:rgba(0,0,0,.35)}
-
-  footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
-  .footer-grid{display:grid;gap:12px}
-  @media(min-width:820px){.footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
-  .muted{color:var(--muted)}
+    :root{ --bg:#FBFAF8; --paper:#FFFFFF; --ink:#272626; --muted:#78736D; --accent:#C7A27A; --ring:#EEE8E1; --shadow:0 14px 36px rgba(0,0,0,.06) }
+    *{box-sizing:border-box} html{scroll-behavior:smooth}
+    body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.7}
+    img{max-width:100%;display:block} a{color:inherit;text-decoration:none}
+    .wrap{max-width:1200px;margin:0 auto;padding:0 22px}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;background:var(--accent);color:#fff;padding:12px 18px;border-radius:999px;font-weight:700;border:0;cursor:pointer}
+    .btn.outline{background:#fff;color:var(--ink);border:1px solid var(--ring)}
+    .card{background:var(--paper);border:1px solid var(--ring);border-radius:22px;box-shadow:var(--shadow)}
+    h1,h2,h3{font-family:'Playfair Display',serif;letter-spacing:.2px}
+    .site-header{position:sticky;top:0;z-index:60;background:rgba(251,250,248,.85);backdrop-filter:saturate(180%) blur(8px);border-bottom:1px solid var(--ring)}
+    .header-inner{display:flex;align-items:center;justify-content:space-between;padding:10px 0}
+    .brand{display:flex;align-items:center;gap:12px}
+    .brand img{width:56px;height:56px;object-fit:contain;border-radius:14px;border:1px solid var(--ring);background:#fff}
+    .brand strong{font-family:'Playfair Display',serif;font-size:clamp(20px,2.6vw,28px)}
+    nav a{padding:10px;font-weight:700}
+    .right{display:flex;align-items:center;gap:10px}
+    .langs a{border:1px solid var(--ring);padding:8px 12px;border-radius:999px}
+    .langs a.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .burger{display:none;background:transparent;border:0;font-size:26px;padding:8px}
+    .drawer{display:none}
+    @media (max-width: 900px){
+      nav{display:none}
+      .burger{display:inline-flex}
+      .drawer{position:fixed;inset:0 0 auto auto;width:min(86vw,360px);height:100vh;background:#fff;border-left:1px solid var(--ring);box-shadow:var(--shadow);padding:22px;transform:translateX(100%);transition:transform .25s ease;z-index:70;display:flex;flex-direction:column;gap:8px}
+      .drawer.open{transform:translateX(0)}
+      .drawer a{padding:12px 4px;border-bottom:1px solid var(--ring);font-weight:700}
+      .drawer .langs{margin-top:8px}
+    }
+    .hero{padding:42px 0 10px}
+    .hero h1{font-size:clamp(28px,4.2vw,44px);margin:0 0 8px}
+    .lead{color:var(--muted)}
+    .filters{display:flex;flex-wrap:wrap;gap:10px;margin:16px 0 6px}
+    .chip{padding:8px 14px;border:1px solid var(--ring);border-radius:999px;background:#fff;font-weight:700;cursor:pointer}
+    .chip.active{background:var(--accent);color:#fff;border-color:var(--accent)}
+    .masonry{columns:2;column-gap:12px}
+    @media(min-width:760px){.masonry{columns:3}}
+    @media(min-width:1100px){.masonry{columns:4}}
+    .masonry a{display:block;break-inside:avoid;margin:0 0 12px;border-radius:16px;overflow:hidden;border:1px solid var(--ring);box-shadow:0 8px 24px rgba(0,0,0,.05)}
+    .masonry img{width:100%;height:auto;display:block;transition:transform .25s ease}
+    .masonry a:hover img{transform:scale(1.02)}
+    .lightbox{position:fixed;inset:0;background:rgba(0,0,0,.9);display:none;align-items:center;justify-content:center;z-index:90}
+    .lightbox.open{display:flex}
+    .lightbox img{max-width:92vw;max-height:86vh;border-radius:12px}
+    .lb-controls{position:fixed;inset:auto 0 20px 0;display:flex;justify-content:center;gap:14px}
+    .lb-btn{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.2);backdrop-filter:blur(6px);color:#fff;padding:10px 14px;border-radius:999px;font-weight:700;cursor:pointer}
+    .lb-close{position:fixed;top:16px;right:16px}
+    .lb-meta{position:fixed;bottom:70px;left:50%;transform:translateX(-50%);color:#fff;text-align:center;font-size:14px;opacity:.9;padding:6px 10px;border-radius:8px;background:rgba(0,0,0,.35)}
+    footer{padding:56px 0;border-top:1px solid var(--ring);margin-top:60px}
+    .footer-grid{display:grid;gap:12px}
+    @media(min-width:820px){.footer-grid{grid-template-columns:2fr 1fr 1fr 1fr}}
+    .muted{color:var(--muted)}
   </style>
 </head>
 <body>
 <header class="site-header">
   <div class="wrap header-inner">
-    <a class="brand" href="/de/"><img src="/images/logo.png" alt=""><strong>Domaine de Barneville</strong></a>
+    <a class="brand" href="/"><img src="/images/logo.png" alt=""><strong>Domaine de Barneville</strong></a>
     <nav aria-label="Primary">
-      <a href="/de/#venue">Veranstaltungsort</a><a href="/de/#gallery">Galerie</a><a href="/de/#faq">FAQ</a><a href="/de/#contact" class="btn">Angebot anfordern</a>
+      <a href="/#venue">Le lieu</a><a href="/#gallery">Galerie</a><a href="/#faq">FAQ</a><a href="/#contact" class="btn">Demander un devis</a>
     </nav>
     <div class="right">
-      <div class="langs"><a href="/">FR</a><a href="/en/">EN</a><a class="active" href="/de/">DE</a></div>
+      <div class="langs"><a class="active" href="/gallery/">FR</a><a href="/en/gallery/">EN</a><a href="/de/gallery/">DE</a></div>
       <button class="burger" aria-label="Open menu">☰</button>
     </div>
   </div>
   <div class="drawer" id="drawer">
-    <a href="/de/#venue">Veranstaltungsort</a><a href="/de/#gallery">Galerie</a><a href="/de/#faq">FAQ</a><a class="btn" href="/de/#contact">Angebot anfordern</a>
-    <div class="langs"><a href="/">FR</a><a href="/en/">EN</a><a class="active" href="/de/">DE</a></div>
+    <a href="/#venue">Le lieu</a><a href="/#gallery">Galerie</a><a href="/#faq">FAQ</a><a class="btn" href="/#contact">Demander un devis</a>
+    <div class="langs"><a class="active" href="/gallery/">FR</a><a href="/en/gallery/">EN</a><a href="/de/gallery/">DE</a></div>
   </div>
 </header>
 
@@ -123,112 +90,50 @@
     <div class="wrap">
       <div class="card" style="padding:22px 24px">
         <nav aria-label="Breadcrumb" class="muted" style="font-size:14px;margin-bottom:8px">
-          <a href="/de/">Startseite</a> › <span>Fotogalerie</span>
+          <a href="/">Accueil</a> › <span>Galerie photo</span>
         </nav>
-        <h1>Fotogalerie</h1>
-        <p class="lead">Mehr Eindrücke vom Anwesen, Zeremonien, Empfang & feinen Details.</p>
-
-        <div class="filters" role="tablist" aria-label="Galerie filtern">
-          <button class="chip active" data-filter="all" role="tab" aria-selected="true">Alle</button>
-          <button class="chip" data-filter="venue" role="tab">Anwesen</button>
-          <button class="chip" data-filter="ceremony" role="tab">Zeremonie</button>
-          <button class="chip" data-filter="reception" role="tab">Empfang</button>
-          <button class="chip" data-filter="details" role="tab">Details</button>
-          <button class="chip" data-filter="aerial" role="tab">Luftaufnahmen</button>
+        <h1>Galerie photo</h1>
+        <p class="lead">Découvrez davantage d’images du domaine, des cérémonies, réceptions et détails raffinés.</p>
+        <div class="filters" role="tablist" aria-label="Filtrer la galerie">
+          <button class="chip active" data-filter="all">Toutes</button>
+          <button class="chip" data-filter="venue">Le domaine</button>
+          <button class="chip" data-filter="ceremony">Cérémonie</button>
+          <button class="chip" data-filter="reception">Réception</button>
+          <button class="chip" data-filter="details">Détails</button>
+          <button class="chip" data-filter="aerial">Vues aériennes</button>
         </div>
       </div>
     </div>
   </section>
 
-  <section aria-label="Bilder">
+  <section aria-label="Images">
     <div class="wrap">
-      <!-- Masonry gallery -->
-      <div id="gallery" class="masonry" data-count="0">
-        <!-- TIP: Add/remove images freely. Use data-tags to power filters. -->
-        <!-- VENUE -->
-        <a href="/images/photo1.jpg" data-tags="venue" aria-label="Manorhaus & Garten">
-          <img loading="lazy" src="/images/photo1.jpg" alt="Manorhaus mit Rosen und Garten im Domaine de Barneville">
-        </a>
-        <a href="/images/photo2.jpg" data-tags="venue">
-          <img loading="lazy" src="/images/photo2.jpg" alt="Steinweg durch die Gärten und Fachwerkhäuser">
-        </a>
-        <a href="/images/photo3.jpg" data-tags="venue">
-          <img loading="lazy" src="/images/photo3.jpg" alt="Blühender Garten mit Fachwerkhaus und hohen Bäumen">
-        </a>
-
-        <!-- CEREMONY -->
-        <a href="/images/photo6.jpg" data-tags="ceremony">
-          <img loading="lazy" src="/images/photo6.jpg" alt="Bestuhlung für freie Trauung unter Zelt">
-        </a>
-        <a href="/images/photo10.jpg" data-tags="ceremony">
-          <img loading="lazy" src="/images/photo10.jpg" alt="Zeremonie mit floraler Deko vor dem Herrenhaus">
-        </a>
-
-        <!-- RECEPTION -->
-        <a href="/images/photo4.jpg" data-tags="reception">
-          <img loading="lazy" src="/images/photo4.jpg" alt="Empfang unter Stretchzelt im Garten">
-        </a>
-        <a href="/images/photo5.jpg" data-tags="reception">
-          <img loading="lazy" src="/images/photo5.jpg" alt="Stretchzelt mit Sitzbereichen und Blumen">
-        </a>
-        <a href="/images/photo7.jpg" data-tags="reception">
-          <img loading="lazy" src="/images/photo7.jpg" alt="Grünes Zelt mit Bankettbestuhlung">
-        </a>
-        <a href="/images/photo11.jpg" data-tags="reception">
-          <img loading="lazy" src="/images/photo11.jpg" alt="Elegante Tische im grünen Zelt mit Blumen">
-        </a>
-        <a href="/images/photo14.jpg" data-tags="reception">
-          <img loading="lazy" src="/images/photo14.jpg" alt="Empfangstische mit farbigen Arrangements">
-        </a>
-        <a href="/images/photo15.jpg" data-tags="reception">
-          <img loading="lazy" src="/images/photo15.jpg" alt="Abendliche Party mit Licht & Nebeleffekten">
-        </a>
-
-        <!-- DETAILS -->
-        <a href="/images/photo12.jpg" data-tags="details">
-          <img loading="lazy" src="/images/photo12.jpg" alt="Tischset mit Glas, Besteck und personalisierter Platzkarte">
-        </a>
-        <a href="/images/photo13.jpg" data-tags="details">
-          <img loading="lazy" src="/images/photo13.jpg" alt="Blick aus dem Zelt mit gedeckten Tischen">
-        </a>
-
-        <!-- AERIAL -->
-        <a href="/images/photo8.jpg" data-tags="aerial">
-          <img loading="lazy" src="/images/photo8.jpg" alt="Luftaufnahme mit Zeremonienzelt und Herrenhaus">
-        </a>
-        <a href="/images/photo9.jpg" data-tags="aerial">
-          <img loading="lazy" src="/images/photo9.jpg" alt="Luftaufnahme mit Empfangszelten und Park">
-        </a>
-
-        <!-- Add more placeholders as needed -->
-        <a href="/images/photo16.jpg" data-tags="venue">
-          <img loading="lazy" src="/images/photo16.jpg" alt="Orangerie mit natürlichem Licht (Platzhalter)">
-        </a>
-        <a href="/images/photo17.jpg" data-tags="details">
-          <img loading="lazy" src="/images/photo17.jpg" alt="Feine Dekodetails (Platzhalter)">
-        </a>
-        <a href="/images/photo18.jpg" data-tags="ceremony">
-          <img loading="lazy" src="/images/photo18.jpg" alt="Trauungsbogen im Garten (Platzhalter)">
-        </a>
-        <a href="/images/photo19.jpg" data-tags="reception">
-          <img loading="lazy" src="/images/photo19.jpg" alt="Abendstimmung im Zelt (Platzhalter)">
-        </a>
-        <a href="/images/photo20.jpg" data-tags="aerial">
-          <img loading="lazy" src="/images/photo20.jpg" alt="Weite Parkanlage aus der Luft (Platzhalter)">
-        </a>
+      <div id="gallery" class="masonry">
+        <a href="/images/photo1.jpg" data-tags="venue"><img src="/images/photo1.jpg" alt="Manoir avec rosiers et jardin"></a>
+        <a href="/images/photo2.jpg" data-tags="venue"><img src="/images/photo2.jpg" alt="Allée en pierre à travers les jardins et maisons à colombages"></a>
+        <a href="/images/photo3.jpg" data-tags="venue"><img src="/images/photo3.jpg" alt="Jardin fleuri et maison à colombages"></a>
+        <a href="/images/photo6.jpg" data-tags="ceremony"><img src="/images/photo6.jpg" alt="Disposition des chaises pour une cérémonie laïque"></a>
+        <a href="/images/photo10.jpg" data-tags="ceremony"><img src="/images/photo10.jpg" alt="Cérémonie florale devant le manoir"></a>
+        <a href="/images/photo4.jpg" data-tags="reception"><img src="/images/photo4.jpg" alt="Réception sous tente stretch dans le jardin"></a>
+        <a href="/images/photo5.jpg" data-tags="reception"><img src="/images/photo5.jpg" alt="Tente stretch avec assises et fleurs"></a>
+        <a href="/images/photo7.jpg" data-tags="reception"><img src="/images/photo7.jpg" alt="Grande tente verte avec tables de banquet"></a>
+        <a href="/images/photo11.jpg" data-tags="reception"><img src="/images/photo11.jpg" alt="Tables élégantes sous la tente avec fleurs"></a>
+        <a href="/images/photo14.jpg" data-tags="reception"><img src="/images/photo14.jpg" alt="Tables de réception décorées de fleurs colorées"></a>
+        <a href="/images/photo15.jpg" data-tags="reception"><img src="/images/photo15.jpg" alt="Soirée avec lumières et ambiance festive"></a>
+        <a href="/images/photo12.jpg" data-tags="details"><img src="/images/photo12.jpg" alt="Détail de table avec carte nominative"></a>
+        <a href="/images/photo13.jpg" data-tags="details"><img src="/images/photo13.jpg" alt="Vue depuis la tente sur les convives"></a>
+        <a href="/images/photo8.jpg" data-tags="aerial"><img src="/images/photo8.jpg" alt="Vue aérienne du domaine avec la tente de cérémonie"></a>
+        <a href="/images/photo9.jpg" data-tags="aerial"><img src="/images/photo9.jpg" alt="Vue aérienne du parc et du manoir"></a>
       </div>
-
-      <!-- Optional: Load more (if you later add pagination) -->
-      <!-- <div style="text-align:center;margin-top:12px"><button class="btn outline" id="loadMore">Mehr laden</button></div> -->
     </div>
   </section>
 
   <section class="wrap" style="margin-top:26px">
     <div class="card" style="padding:18px 20px;display:flex;gap:12px;flex-wrap:wrap;align-items:center;justify-content:space-between">
-      <div class="muted" style="font-size:14px">Gefällt Ihnen, was Sie sehen? Fragen Sie die Verfügbarkeit an – wir melden uns zeitnah.</div>
+      <div class="muted" style="font-size:14px">Envie d’en savoir plus ? Demandez la disponibilité — nous vous répondrons rapidement.</div>
       <div style="display:flex;gap:10px;flex-wrap:wrap">
-        <a class="btn" href="/de/#contact">Verfügbarkeit prüfen</a>
-        <a class="btn outline" href="/de/">Zur Startseite</a>
+        <a class="btn" href="/#contact">Vérifier la disponibilité</a>
+        <a class="btn outline" href="/">Retour à l’accueil</a>
       </div>
     </div>
   </section>
@@ -236,96 +141,36 @@
 
 <footer>
   <div class="wrap footer-grid">
-    <div><p class="muted">© 2025 Domaine de Barneville. Alle Rechte vorbehalten.</p></div>
-    <div><a class="muted" href="/de/#faq">FAQ</a></div>
-    <div><a class="muted" href="/de/#contact">Kontakt</a></div>
-    <div><a class="muted" href="/">FR</a> • <a class="muted" href="/de/">DE</a></div>
+    <div><p class="muted">© 2025 Domaine de Barneville. Tous droits réservés.</p></div>
+    <div><a class="muted" href="/#faq">FAQ</a></div>
+    <div><a class="muted" href="/#contact">Contact</a></div>
+    <div><a class="muted" href="/">FR</a> • <a class="muted" href="/de/">DE</a> • <a class="muted" href="/en/">EN</a></div>
   </div>
 </footer>
 
-<!-- Lightbox + Filters + Drawer JS -->
 <script>
-  // Drawer (mobile)
-  const burger = document.querySelector('.burger');
-  const drawer = document.getElementById('drawer');
-  if (burger && drawer){
-    burger.addEventListener('click',()=>drawer.classList.toggle('open'));
-    drawer.addEventListener('click',e=>{ if(e.target.tagName==='A') drawer.classList.remove('open'); });
-  }
+  const burger=document.querySelector('.burger');const drawer=document.getElementById('drawer');
+  if(burger&&drawer){burger.addEventListener('click',()=>drawer.classList.toggle('open'));drawer.addEventListener('click',e=>{if(e.target.tagName==='A')drawer.classList.remove('open');});}
 
-  // Filters
-  const chips = document.querySelectorAll('.chip');
-  const items = Array.from(document.querySelectorAll('#gallery a'));
-  chips.forEach(c=>{
-    c.addEventListener('click', ()=>{
-      chips.forEach(x=>x.classList.remove('active'));
-      c.classList.add('active');
-      const f = c.dataset.filter;
-      items.forEach(a=>{
-        const tags = (a.dataset.tags||'').split(',');
-        const show = (f==='all') || tags.includes(f);
-        a.style.display = show ? 'block' : 'none';
-      });
-    });
-  });
+  const chips=document.querySelectorAll('.chip');const items=[...document.querySelectorAll('#gallery a')];
+  chips.forEach(c=>c.addEventListener('click',()=>{chips.forEach(x=>x.classList.remove('active'));c.classList.add('active');
+    const f=c.dataset.filter;items.forEach(a=>{const tags=(a.dataset.tags||'').split(',');a.style.display=(f==='all'||tags.includes(f))?'block':'none';});
+  }));
 
-  // Lightbox
-  const lb = document.createElement('div');
-  lb.className = 'lightbox';
-  lb.innerHTML = `
-    <button class="lb-btn lb-close" aria-label="Schließen">✕</button>
-    <img alt="">
-    <div class="lb-meta" aria-live="polite"></div>
-    <div class="lb-controls">
-      <button class="lb-btn" id="prev" aria-label="Vorheriges Bild">‹</button>
-      <button class="lb-btn" id="next" aria-label="Nächstes Bild">›</button>
-      <a class="lb-btn" id="openFull" target="_blank" rel="noopener">Original öffnen</a>
-    </div>`;
+  const lb=document.createElement('div');lb.className='lightbox';lb.innerHTML=`
+    <button class="lb-btn lb-close" aria-label="Fermer">✕</button>
+    <img alt=""><div class="lb-meta" aria-live="polite"></div>
+    <div class="lb-controls"><button class="lb-btn" id="prev">‹</button><button class="lb-btn" id="next">›</button><a class="lb-btn" id="openFull" target="_blank" rel="noopener">Ouvrir l’original</a></div>`;
   document.body.appendChild(lb);
-  const lbImg = lb.querySelector('img');
-  const lbMeta = lb.querySelector('.lb-meta');
-  const lbClose = lb.querySelector('.lb-close');
-  const btnPrev = lb.querySelector('#prev');
-  const btnNext = lb.querySelector('#next');
-  const btnOpen = lb.querySelector('#openFull');
-
-  let current = -1;
-  const visibleItems = ()=>items.filter(a=>a.style.display!== 'none');
-
-  function openAt(idx){
-    const vis = visibleItems();
-    if (!vis.length) return;
-    current = (idx+vis.length)%vis.length;
-    const a = vis[current];
-    lbImg.src = a.getAttribute('href');
-    lbImg.alt = a.querySelector('img')?.alt || 'Bild';
-    lbMeta.textContent = `${current+1} / ${vis.length}`;
-    btnOpen.href = a.getAttribute('href');
-    lb.classList.add('open');
-  }
-  function closeLb(){ lb.classList.remove('open'); lbImg.src = ''; }
-
-  items.forEach((a, i)=>{
-    a.addEventListener('click', e=>{
-      e.preventDefault();
-      const vis = visibleItems();
-      const idx = vis.indexOf(a);
-      openAt(idx>=0?idx:i);
-    });
-  });
-  lbClose.addEventListener('click', closeLb);
-  btnPrev.addEventListener('click', ()=>openAt(current-1));
-  btnNext.addEventListener('click', ()=>openAt(current+1));
-  lb.addEventListener('click', e=>{ if(e.target===lb) closeLb(); });
-  document.addEventListener('keydown', e=>{
-    if(!lb.classList.contains('open')) return;
-    if(e.key==='Escape') closeLb();
-    if(e.key==='ArrowLeft') openAt(current-1);
-    if(e.key==='ArrowRight') openAt(current+1);
-  });
-
-  // Optional "Load more" example (hook for future)
-  // document.getElementById('loadMore')?.addEventListener('click', ()=>{/* append more <a><img></a> here */});
+  const lbImg=lb.querySelector('img'),lbMeta=lb.querySelector('.lb-meta'),lbClose=lb.querySelector('.lb-close'),
+        btnPrev=lb.querySelector('#prev'),btnNext=lb.querySelector('#next'),btnOpen=lb.querySelector('#openFull');
+  let current=-1;const visibleItems=()=>items.filter(a=>a.style.display!=='none');
+  function openAt(idx){const vis=visibleItems();if(!vis.length)return;current=(idx+vis.length)%vis.length;
+    const a=vis[current];lbImg.src=a.href;lbImg.alt=a.querySelector('img')?.alt||'Image';lbMeta.textContent=`${current+1} / ${vis.length}`;btnOpen.href=a.href;lb.classList.add('open');}
+  function closeLb(){lb.classList.remove('open');lbImg.src='';}
+  items.forEach((a,i)=>a.addEventListener('click',e=>{e.preventDefault();const vis=visibleItems();const idx=vis.indexOf(a);openAt(idx>=0?idx:i);})); 
+  lbClose.addEventListener('click',closeLb);btnPrev.addEventListener('click',()=>openAt(current-1));btnNext.addEventListener('click',()=>openAt(current+1));
+  lb.addEventListener('click',e=>{if(e.target===lb)closeLb();});document.addEventListener('keydown',e=>{if(!lb.classList.contains('open'))return;if(e.key==='Escape')closeLb();if(e.key==='ArrowLeft')openAt(current-1);if(e.key==='ArrowRight')openAt(current+1);});
 </script>
 </body>
 </html>
